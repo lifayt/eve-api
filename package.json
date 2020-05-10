@@ -1,0 +1,27 @@
+{
+  "name": "eve-api",
+  "version": "1.0.0",
+  "description": "eve api wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lifayt/eve-api.git"
+  },
+  "keywords": [
+    "api",
+    "eve",
+    "market"
+  ],
+  "author": "Linus Falck-Ytter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lifayt/eve-api/issues"
+  },
+  "homepage": "https://github.com/lifayt/eve-api#readme",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1"
+  }
+}
