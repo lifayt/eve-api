@@ -4,7 +4,9 @@
   "description": "eve api wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "start:dev": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,12 @@
   },
   "homepage": "https://github.com/lifayt/eve-api#readme",
   "dependencies": {
-    "@hapi/hapi": "^19.1.1"
+    "@hapi/hapi": "^19.1.1",
+    "dotenv": "^8.2.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "csv-parser": "^2.3.2",
+    "nodemon": "^2.0.3"
   }
 }
