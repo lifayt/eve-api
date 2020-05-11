@@ -65,7 +65,7 @@ const insertIntoMySql = (results) => {
     });
 
     connection.end(function (err) {
-      if (error) throw error;
+      if (err) throw err;
     });
   } catch (e) {
     console.log(`Error inserting data: ${e}`);
