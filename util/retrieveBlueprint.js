@@ -1,7 +1,8 @@
 "use strict";
 const mysql = require("mysql");
 const fs = require("fs");
-const get = require("lodash.get");
+const retrieveBlueprint = require("../server/database/retrieveBlueprints");
+const formatBlueprint = require("../server/formatters/formatBlueprint");
 require("dotenv").config();
 
 const connection = mysql.createConnection({
@@ -19,96 +20,6 @@ connection.connect(function (err) {
 
   console.log("connected as id " + connection.threadId);
 });
-
-const retrieveBlueprint = async (typeID) => {
-  try {
-    const options = {
-      sql:
-        "SELECT * FROM `eve-prices`.v_blueprintretrieval WHERE productTypeID = ?"
-    };
-
-    console.log(`Fetching Blueprint for typeID: ${typeID}`);
-
-    const results = await new Promise((resolve, reject) => {
-      connection.query(options, [typeID], function (error, results, fields) {
-        if (error) reject(error);
-        resolve(results);
-      });
-    });
-
-    const materials = results.map((result) => {
-      const {
-        materialTypeID,
-        materialName,
-        materialQuantity,
-        materialFivePercent
-      } = result;
-      return {
-        materialTypeID,
-        materialName,
-        materialQuantity,
-        materialFivePercent
-      };
-    });
-
-    const {
-      productFivePercent,
-      productQuantity,
-      blueprintTypeID,
-      blueprintName,
-      productTypeID,
-      productName
-    } = results[0];
-
-    const unitPrice = parseFloat(productFivePercent);
-
-    const totalMaterialsCost = results.reduce((accumulator, material) => {
-      const materialBasePrice = get(material, "materialBasePrice", 0);
-      const materialPrice = get(
-        material,
-        "materialFivePercent",
-        materialBasePrice
-      );
-      const totalMaterialPrice =
-        parseFloat(materialPrice) *
-        parseFloat(get(material, "materialQuantity"));
-
-      return accumulator + totalMaterialPrice;
-    }, parseFloat(get(materials[0], "materialFivePercent", 0)));
-
-    const unitProductionPrice = totalMaterialsCost / parseInt(productQuantity);
-
-    const unitProfit = unitPrice - unitProductionPrice;
-
-    const profitMargin = (unitProfit / unitProductionPrice) * 100;
-
-    const priceAnalysis = {
-      totalMaterialsCost,
-      unitProductionPrice,
-      unitPrice,
-      unitProfit,
-      profitMargin
-    };
-
-    const resultObject = {
-      blueprintTypeID,
-      blueprintName,
-      produces: {
-        productTypeID,
-        productName,
-        productFivePercent,
-        productQuantity
-      },
-      materials,
-      priceAnalysis
-    };
-
-    return resultObject;
-  } catch (err) {
-    console.log(err);
-    return null;
-  }
-};
 
 const retrieveAllBlueprints = async () => {
   const results = await new Promise((resolve, reject) => {
@@ -145,12 +56,16 @@ const retrieveAllBlueprints = async () => {
     `${__dirname}/../data/analyses.json`,
     JSON.stringify(filteredResultSet)
   );
+};
+
+const run = async () => {
+  //retrieveAllBlueprints();
+  const results = await retrieveBlueprint(connection, "185");
+  console.log(formatBlueprint(results));
 
   connection.end(function (error) {
     if (error) throw error;
   });
 };
 
-retrieveAllBlueprints();
-
-//retrieveBlueprint("185");
+run();
