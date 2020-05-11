@@ -29,7 +29,7 @@ const insertIntoMySql = (results) => {
         "INSERT INTO `eve-prices`.Prices (fivePercent, isBuyOrder, itemID, maximumValue, median, minimumValue, numOrders, orderSet, region, stdDev, timeUpdated, typeID, volume, weightedAverage) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE fivePercent=?, isBuyOrder=?, itemID=?, maximumValue=?, median=?, minimumValue=?, numOrders=?, orderSet=?, region=?, stdDev=?, timeUpdated=?, typeID=?, volume=?, weightedAverage=?",
         [
           parseFloat(result.fivepercent),
-          parseBool(result.what.isBuyOrder),
+          result.what.isBuyOrder,
           result.what.itemID,
           parseFloat(result.maxval),
           parseFloat(result.median),
@@ -43,7 +43,7 @@ const insertIntoMySql = (results) => {
           parseInt(result.volume),
           parseFloat(result.weightedaverage),
           parseFloat(result.fivepercent),
-          parseBool(result.what.isBuyOrder),
+          result.what.isBuyOrder,
           result.what.itemID,
           parseFloat(result.maxval),
           parseFloat(result.median),
