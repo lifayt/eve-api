@@ -1,24 +1,57 @@
 "use strict";
 const get = require("lodash.get");
 
-const formatMaterials = (rows) => {
-  return rows.map((result) => {
-    const {
-      materialTypeID,
-      materialName,
-      materialQuantity,
-      materialFivePercent
-    } = result;
+const formatIsk = (value) => {
+  return new Intl.NumberFormat("en-IS", {
+    style: "currency",
+    currency: "ISK",
+    maximumSignificantDigits: 4
+  }).format(value);
+};
+
+const formatMaterials = (rows, materialEfficiency, stationBonus, runs) => {
+  return rows.map((row) => {
+    const { materialTypeID, materialName, materialQuantity } = row;
+
+    const adjustedMaterialQuantity = Math.max(
+      Math.ceil(
+        materialQuantity * ((100 - materialEfficiency) / 100) * stationBonus
+      )
+    );
+
+    const materialBasePrice = parseFloat(get(row, "materialBasePrice", 0));
+    const materialPrice = parseFloat(
+      get(row, "materialFivePercent", materialBasePrice)
+    );
+
+    const baseMaterialRunCost = materialPrice * materialQuantity;
+    const adjustedMaterialRunCost = materialPrice * adjustedMaterialQuantity;
+
+    const totalMaterialQuantity = Math.max(
+      Math.ceil(
+        materialQuantity *
+          ((100 - materialEfficiency) / 100) *
+          stationBonus *
+          runs
+      )
+    );
+    const totalRunCost = adjustedMaterialRunCost * runs;
+
     return {
       materialTypeID,
       materialName,
-      materialQuantity,
-      materialFivePercent
+      materialPrice,
+      baseMaterialQuantity: materialQuantity,
+      baseMaterialRunCost,
+      adjustedMaterialQuantity,
+      adjustedMaterialRunCost,
+      totalMaterialQuantity,
+      totalRunCost
     };
   });
 };
 
-module.exports = (rows) => {
+module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
   const {
     productFivePercent,
     productQuantity,
@@ -30,38 +63,66 @@ module.exports = (rows) => {
     productName
   } = rows[0];
 
+  const materials = formatMaterials(
+    rows,
+    materialEfficiency,
+    stationBonus,
+    runs
+  );
+
   const unitPrice = parseFloat(productFivePercent);
 
-  const totalMaterialsCost = rows.reduce((accumulator, material) => {
-    const materialBasePrice = get(material, "materialBasePrice", 0);
-    const materialPrice = get(
-      material,
-      "materialFivePercent",
-      materialBasePrice
-    );
-    const totalMaterialPrice =
-      parseFloat(materialPrice) * parseFloat(get(material, "materialQuantity"));
+  const baseTotalMaterialCost = materials.reduce((accumulator, material) => {
+    return accumulator + material.baseMaterialRunCost;
+  }, get(rows[0], "baseMaterialRunCost", 0));
 
-    return accumulator + totalMaterialPrice;
-  }, parseFloat(get(rows[0], "materialFivePercent", 0)));
+  const baseUnitProductionPrice =
+    baseTotalMaterialCost / parseInt(productQuantity);
 
-  const unitProductionPrice = totalMaterialsCost / parseInt(productQuantity);
+  const baseUnitProfit = unitPrice - baseUnitProductionPrice;
 
-  const unitProfit = unitPrice - unitProductionPrice;
+  const baseProfitMargin = (baseUnitProfit / baseUnitProductionPrice) * 100;
 
-  const profitMargin = (unitProfit / unitProductionPrice) * 100;
+  const adjustedTotalMaterialCost = materials.reduce(
+    (accumulator, material) => {
+      return accumulator + material.adjustedMaterialRunCost;
+    },
+    get(rows[0], "adjustedMaterialRunCost", 0)
+  );
 
-  /*
-      Return sell volume and order volume
-    */
+  const adjustedUnitProductionPrice =
+    adjustedTotalMaterialCost / parseInt(productQuantity);
+
+  const adjustedUnitProfit = unitPrice - adjustedUnitProductionPrice;
+
+  const adjustedProfitMargin =
+    (adjustedUnitProfit / adjustedUnitProductionPrice) * 100;
+
+  const baseTotalRunCost = baseTotalMaterialCost * runs;
+
+  const adjustedtotalRunCost = adjustedTotalMaterialCost * runs;
+
+  const baseExpectedProfit =
+    unitPrice * productQuantity * runs - baseTotalRunCost;
+
+  const adjustedExpectedProfit =
+    unitPrice * productQuantity * runs - adjustedtotalRunCost;
+
   const priceAnalysis = {
-    totalMaterialsCost,
-    unitProductionPrice,
-    unitPrice,
-    unitProfit,
-    profitMargin,
-    productSellVolume,
-    productNumOrders
+    productName,
+    unitPrice: formatIsk(unitPrice),
+    baseTotalMaterialCost: formatIsk(baseTotalMaterialCost),
+    baseUnitProductionPrice: formatIsk(baseUnitProductionPrice),
+    baseUnitProfit: formatIsk(baseUnitProfit),
+    baseExpectedProfit: formatIsk(baseExpectedProfit),
+    baseProfitMargin,
+    adjustedTotalMaterialCost: formatIsk(adjustedTotalMaterialCost),
+    adjustedUnitProductionPrice: formatIsk(adjustedUnitProductionPrice),
+    adjustedUnitProfit: formatIsk(adjustedUnitProfit),
+    adjustedExpectedProfit: formatIsk(adjustedExpectedProfit),
+    adjustedProfitMargin,
+    productSellVolume: parseInt(productSellVolume),
+    productNumOrders: parseInt(productNumOrders)
   };
 
   const resultObject = {
@@ -73,7 +134,7 @@ module.exports = (rows) => {
       productFivePercent,
       productQuantity
     },
-    materials: formatMaterials(rows),
+    materials,
     priceAnalysis
   };
 
