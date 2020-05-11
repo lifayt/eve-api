@@ -1,6 +1,7 @@
 "use strict";
 const mysql = require("mysql");
 const fs = require("fs");
+const get = require("lodash.get");
 require("dotenv").config();
 
 const connection = mysql.createConnection({
@@ -19,25 +20,11 @@ connection.connect(function (err) {
   console.log("connected as id " + connection.threadId);
 });
 
-const getPrice = async (typeID) => {
-  return new Promise((resolve, reject) => {
-    const options = {
-      sql:
-        "select * from `eve-prices`.Prices where typeID = ? AND region = 10000002 AND isBuyOrder = 'false'"
-    };
-    connection.query(options, [typeID], function (error, results, fields) {
-      if (error) reject(error);
-      resolve(results);
-    });
-  });
-};
-
 const retrieveBlueprint = async (typeID) => {
   try {
     const options = {
       sql:
-        "SELECT industryBlueprints.typeID, blueprint.typeName, productTypeID, product.typeName, industryActivityProducts.quantity, materialTypeID, material.typeName, industryActivityMaterials.quantity FROM industryBlueprints INNER JOIN invTypes AS blueprint ON industryBlueprints.typeID = blueprint.typeID INNER JOIN industryActivityProducts ON industryBlueprints.typeID = industryActivityProducts.typeID INNER JOIN invTypes AS product ON industryActivityProducts.productTypeID = product.typeID INNER JOIN industryActivityMaterials ON industryActivityMaterials.typeID = industryBlueprints.typeID INNER JOIN invTypes AS material ON industryActivityMaterials.materialTypeID = material.typeID WHERE industryActivityMaterials.activityID = 1 AND industryActivityProducts.activityID = 1 AND industryActivityProducts.productTypeID = ? ORDER BY typeID asc",
-      nestTables: "_"
+        "SELECT * FROM `eve-prices`.v_blueprintretrieval WHERE productTypeID = ?"
     };
 
     console.log(`Fetching Blueprint for typeID: ${typeID}`);
@@ -49,38 +36,47 @@ const retrieveBlueprint = async (typeID) => {
       });
     });
 
-    const materials = await Promise.all(
-      results.map(async (result) => {
-        const prices = await getPrice(
-          result.industryActivityMaterials_materialTypeID
-        );
-        return {
-          typeID: result.industryActivityMaterials_materialTypeID,
-          name: result.material_typeName,
-          quantity: result.industryActivityMaterials_quantity,
-          price: prices[0].fivePercent
-        };
-      })
-    );
+    const materials = results.map((result) => {
+      const {
+        materialTypeID,
+        materialName,
+        materialQuantity,
+        materialFivePercent
+      } = result;
+      return {
+        materialTypeID,
+        materialName,
+        materialQuantity,
+        materialFivePercent
+      };
+    });
 
-    console.log(
-      `Fetching Price for product: ${results[0].industryActivityProducts_productTypeID} - ${results[0].product_typeName}`
-    );
+    const {
+      productFivePercent,
+      productQuantity,
+      blueprintTypeID,
+      blueprintName,
+      productTypeID,
+      productName
+    } = results[0];
 
-    const productPrice = await getPrice(
-      results[0].industryActivityProducts_productTypeID
-    );
+    const unitPrice = parseFloat(productFivePercent);
 
-    const unitPrice = parseFloat(productPrice[0].fivePercent);
+    const totalMaterialsCost = results.reduce((accumulator, material) => {
+      const materialBasePrice = get(material, "materialBasePrice", 0);
+      const materialPrice = get(
+        material,
+        "materialFivePercent",
+        materialBasePrice
+      );
+      const totalMaterialPrice =
+        parseFloat(materialPrice) *
+        parseFloat(get(material, "materialQuantity"));
 
-    const totalMaterialsCost = materials.reduce((accumulator, material) => {
-      const materialPrice =
-        parseFloat(material.price) * parseFloat(material.quantity);
-      return accumulator + materialPrice;
-    }, parseFloat(materials[0].price));
+      return accumulator + totalMaterialPrice;
+    }, parseFloat(get(materials[0], "materialFivePercent", 0)));
 
-    const unitProductionPrice =
-      totalMaterialsCost / results[0].industryActivityProducts_quantity;
+    const unitProductionPrice = totalMaterialsCost / parseInt(productQuantity);
 
     const unitProfit = unitPrice - unitProductionPrice;
 
@@ -95,13 +91,13 @@ const retrieveBlueprint = async (typeID) => {
     };
 
     const resultObject = {
-      typeID: results[0].industryBlueprints_typeID,
-      name: results[0].blueprint_typeName,
+      blueprintTypeID,
+      blueprintName,
       produces: {
-        typeID: results[0].industryActivityProducts_productTypeID,
-        name: results[0].product_typeName,
-        price: productPrice[0].fivePercent,
-        quantity: results[0].industryActivityProducts_quantity
+        productTypeID,
+        productName,
+        productFivePercent,
+        productQuantity
       },
       materials,
       priceAnalysis
@@ -156,3 +152,5 @@ const retrieveAllBlueprints = async () => {
 };
 
 retrieveAllBlueprints();
+
+//retrieveBlueprint("185");
