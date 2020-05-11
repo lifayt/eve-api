@@ -3,6 +3,7 @@ const mysql = require("mysql");
 const fs = require("fs");
 const retrieveBlueprint = require("../server/database/retrieveBlueprints");
 const formatBlueprint = require("../server/formatters/formatBlueprint");
+const formatOrders = require("../server/formatters/formatOrders");
 require("dotenv").config();
 
 const connection = mysql.createConnection({
@@ -21,21 +22,44 @@ connection.connect(function (err) {
   console.log("connected as id " + connection.threadId);
 });
 
-const generateOrder = async (
-  typeId,
-  materialEfficiency,
-  stationBonus,
-  runs
-) => {
-  const rows = await retrieveBlueprint(connection, typeId);
-  const order = formatBlueprint(rows, materialEfficiency, stationBonus, runs);
-  return order;
+const generateOrders = async (orders) => {
+  const blueprints = await Promise.all(
+    orders.map(async (order) => {
+      const rows = await retrieveBlueprint(connection, order.typeID);
+      return formatBlueprint(
+        rows,
+        order.materialEfficiency,
+        order.stationBonus,
+        order.runs
+      );
+    })
+  );
+
+  return formatOrders(blueprints);
 };
 
 const run = async () => {
-  //retrieveAllBlueprints();
-  const results = await retrieveBlueprint(connection, "185");
-  console.log(formatBlueprint(results, 10, 0.99, 2));
+  const orders = await generateOrders([
+    {
+      typeID: "185",
+      materialEfficiency: 10,
+      stationBonus: 0.98,
+      runs: 600
+    },
+    {
+      typeID: "183",
+      materialEfficiency: 10,
+      stationBonus: 0.98,
+      runs: 600
+    },
+    {
+      typeID: "182",
+      materialEfficiency: 10,
+      stationBonus: 0.98,
+      runs: 600
+    }
+  ]);
+  console.log(orders);
 
   connection.end(function (error) {
     if (error) throw error;

@@ -1,13 +1,6 @@
 "use strict";
 const get = require("lodash.get");
-
-const formatIsk = (value) => {
-  return new Intl.NumberFormat("en-IS", {
-    style: "currency",
-    currency: "ISK",
-    maximumSignificantDigits: 4
-  }).format(value);
-};
+const formatIsk = require("./formatIsk");
 
 const formatMaterials = (rows, materialEfficiency, stationBonus, runs) => {
   return rows.map((row) => {
@@ -102,15 +95,14 @@ module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
 
   const adjustedtotalRunCost = adjustedTotalMaterialCost * runs;
 
-  const baseExpectedProfit =
-    unitPrice * productQuantity * runs - baseTotalRunCost;
-
-  const adjustedExpectedProfit =
-    unitPrice * productQuantity * runs - adjustedtotalRunCost;
+  const expectedRevenue = unitPrice * productQuantity * runs;
+  const baseExpectedProfit = expectedRevenue - baseTotalRunCost;
+  const adjustedExpectedProfit = expectedRevenue - adjustedtotalRunCost;
 
   const priceAnalysis = {
     productName,
     unitPrice: formatIsk(unitPrice),
+    expectedRevenue,
     baseTotalMaterialCost: formatIsk(baseTotalMaterialCost),
     baseUnitProductionPrice: formatIsk(baseUnitProductionPrice),
     baseUnitProfit: formatIsk(baseUnitProfit),
