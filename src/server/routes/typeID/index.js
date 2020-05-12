@@ -1,7 +1,7 @@
 "use strict";
 const handler = require("./handler");
 
-const typeID = {
+module.exports = {
   name: "typeID",
   version: "1.0.0",
   register: async function (server, options) {
@@ -12,5 +12,3 @@ const typeID = {
     });
   }
 };
-
-module.exports = typeID;

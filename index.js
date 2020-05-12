@@ -2,6 +2,7 @@
 
 const Hapi = require("@hapi/hapi");
 const mysql = require("mysql");
+const inert = require("@hapi/inert");
 require("dotenv").config();
 
 const connection = mysql.createConnection({
@@ -13,11 +14,13 @@ const connection = mysql.createConnection({
 
 const typeID = require("./src/server/routes/typeID/");
 const orders = require("./src/server/routes/orders/");
+const client = require("./src/server/routes/client");
 
 const init = async () => {
   const server = Hapi.server({
     port: 3000,
-    host: "localhost"
+    host: "localhost",
+    debug: { request: ["error"] }
   });
 
   connection.connect(function (err) {
@@ -31,6 +34,9 @@ const init = async () => {
 
   await server.register([
     {
+      plugin: inert
+    },
+    {
       plugin: typeID,
       options: {
         connection
@@ -41,6 +47,9 @@ const init = async () => {
       options: {
         connection
       }
+    },
+    {
+      plugin: client
     }
   ]);
 
