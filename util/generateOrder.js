@@ -41,25 +41,19 @@ const generateOrders = async (orders) => {
 const run = async () => {
   const orders = await generateOrders([
     {
-      typeID: "185",
+      typeID: "2603",
       materialEfficiency: 10,
-      stationBonus: 0.98,
+      stationBonus: 0.99,
       runs: 600
     },
     {
-      typeID: "183",
+      typeID: "257",
       materialEfficiency: 10,
-      stationBonus: 0.98,
-      runs: 600
-    },
-    {
-      typeID: "182",
-      materialEfficiency: 10,
-      stationBonus: 0.98,
+      stationBonus: 0.99,
       runs: 600
     }
   ]);
-  console.log(orders);
+  console.log(JSON.stringify(orders, null, 2));
 
   connection.end(function (error) {
     if (error) throw error;

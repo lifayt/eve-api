@@ -20,13 +20,11 @@ const formatMaterials = (rows, materialEfficiency, stationBonus, runs) => {
     const baseMaterialRunCost = materialPrice * materialQuantity;
     const adjustedMaterialRunCost = materialPrice * adjustedMaterialQuantity;
 
-    const totalMaterialQuantity = Math.max(
-      Math.ceil(
-        materialQuantity *
-          ((100 - materialEfficiency) / 100) *
-          stationBonus *
-          runs
-      )
+    const totalMaterialQuantity = Math.ceil(
+      Math.max(
+        materialQuantity * ((100 - materialEfficiency) / 100) * stationBonus,
+        1
+      ) * runs
     );
     const totalRunCost = adjustedMaterialRunCost * runs;
 
@@ -45,8 +43,17 @@ const formatMaterials = (rows, materialEfficiency, stationBonus, runs) => {
 };
 
 module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
+  if (rows.length === 0) {
+    return {};
+  }
+
+  const productFivePercent = get(
+    rows[0],
+    "productFivePercent",
+    rows[0].productBasePrice
+  );
+
   const {
-    productFivePercent,
     productQuantity,
     productSellVolume,
     productNumOrders,

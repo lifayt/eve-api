@@ -3,6 +3,7 @@ const mysql = require("mysql");
 const fs = require("fs");
 const retrieveBlueprint = require("../server/database/retrieveBlueprints");
 const formatBlueprint = require("../server/formatters/formatBlueprint");
+const groupBy = require("../server/utils/groupBy");
 require("dotenv").config();
 
 const connection = mysql.createConnection({
@@ -24,7 +25,7 @@ connection.connect(function (err) {
 const retrieveAllBlueprints = async () => {
   const results = await new Promise((resolve, reject) => {
     connection.query(
-      "SELECT productTypeID FROM industryBlueprints INNER JOIN invTypes AS blueprints ON industryBlueprints.typeID = blueprints.typeID INNER JOIN industryActivityProducts ON industryBlueprints.typeID = industryActivityProducts.typeID INNER JOIN invTypes AS products ON industryActivityProducts.productTypeID = products.typeID WHERE industryActivityProducts.activityID = 1 ORDER BY industryBlueprints.typeID asc",
+      "select * from `eve-prices`.v_blueprintsByMarketGroup ORDER BY `eve-prices`.v_blueprintsByMarketGroup.parentGroupName asc LIMIT 50",
       function (error, results, fields) {
         if (error) reject(error);
         resolve(results);
@@ -32,14 +33,41 @@ const retrieveAllBlueprints = async () => {
     );
   });
 
+  const groupedBlueprints = groupBy(results, "parentGroupName");
+
+  const marketGroups = Object.keys(groupedBlueprints);
+
+  const fetchMarketGroupBlueprints = async (marketGroup) => {
+    const blueprintGroup = await Promise.all(
+      marketGroup.map(async (blueprint) => {
+        console.log(
+          `Querying Blueprint for Product: ${blueprint.productTypeID} - ${blueprint.typeName}`
+        );
+        const analysis = await retrieveBlueprint(
+          connection,
+          blueprint.productTypeID
+        );
+        console.log(
+          `Formatting Blueprint for Product: ${blueprint.productTypeID} - ${blueprint.typeName}`
+        );
+        const formattedAnalysis = formatBlueprint(analysis);
+        return formattedAnalysis;
+      })
+    );
+
+    return blueprintGroup;
+  };
+
   const analyses = await Promise.all(
-    results.map(async (result) => {
-      console.log(`Querying Blueprint for Product: ${result.productTypeID}`);
-      const blueprint = await retrieveBlueprint(result.productTypeID);
-      return blueprint;
+    marketGroups.map(async (marketGroup) => {
+      const blueprints = groupedBlueprints[marketGroup];
+      return await fetchMarketGroupBlueprints(blueprints);
     })
   );
 
+  console.log(analyses);
+
+  /*
   const filteredResultSet = analyses.filter((value) => value !== null);
 
   filteredResultSet.sort((a, b) => {
@@ -56,12 +84,13 @@ const retrieveAllBlueprints = async () => {
     `${__dirname}/../data/analyses.json`,
     JSON.stringify(filteredResultSet)
   );
+  */
 };
 
 const run = async () => {
-  //retrieveAllBlueprints();
-  const results = await retrieveBlueprint(connection, "185");
-  console.log(formatBlueprint(results));
+  await retrieveAllBlueprints();
+  //const results = await retrieveBlueprint(connection, "12791");
+  //console.log(formatBlueprint(results));
 
   connection.end(function (error) {
     if (error) throw error;
