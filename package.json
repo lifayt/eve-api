@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./index.js",
-    "start:dev": "nodemon ./index.js"
+    "start:dev": "nodemon ./index.js",
+    "watch": "parcel watch ./src/client/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,13 @@
   "homepage": "https://github.com/lifayt/eve-api#readme",
   "dependencies": {
     "@hapi/hapi": "^19.1.1",
+    "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "lodash.get": "^4.4.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "csv-parser": "^2.3.2",
