@@ -6,10 +6,11 @@ module.exports = {
   register: async function (server, options) {
     server.route({
       method: "GET",
-      path: "/{file}",
+      path: "/{file*}",
       handler: {
         directory: {
-          path: `${__dirname}/../../../../dist/`
+          path: `${__dirname}/../../../../dist/`,
+          index: ["index.html"]
         }
       }
     });
