@@ -1,7 +1,7 @@
 "use strict";
 const mysql = require("mysql");
 const fs = require("fs");
-const retrieveBlueprint = require("../server/database/retrieveBlueprints");
+const formatIsk = require("../server/formatters/formatIsk");
 const formatBlueprint = require("../server/formatters/formatBlueprint");
 const groupBy = require("../server/utils/groupBy");
 require("dotenv").config();
@@ -25,7 +25,7 @@ connection.connect(function (err) {
 const retrieveAllBlueprints = async () => {
   const results = await new Promise((resolve, reject) => {
     connection.query(
-      "select * from `eve-prices`.v_blueprintsByMarketGroup ORDER BY `eve-prices`.v_blueprintsByMarketGroup.parentGroupName asc LIMIT 50",
+      "SELECT * FROM `eve-prices`.v_blueprintretrieval",
       function (error, results, fields) {
         if (error) reject(error);
         resolve(results);
@@ -33,58 +33,62 @@ const retrieveAllBlueprints = async () => {
     );
   });
 
-  const groupedBlueprints = groupBy(results, "parentGroupName");
+  const groupedBlueprints = groupBy(results, "productTypeID");
 
-  const marketGroups = Object.keys(groupedBlueprints);
+  const blueprintKeys = Object.keys(groupedBlueprints);
 
-  const fetchMarketGroupBlueprints = async (marketGroup) => {
-    const blueprintGroup = await Promise.all(
-      marketGroup.map(async (blueprint) => {
-        console.log(
-          `Querying Blueprint for Product: ${blueprint.productTypeID} - ${blueprint.typeName}`
-        );
-        const analysis = await retrieveBlueprint(
-          connection,
-          blueprint.productTypeID
-        );
-        console.log(
-          `Formatting Blueprint for Product: ${blueprint.productTypeID} - ${blueprint.typeName}`
-        );
-        const formattedAnalysis = formatBlueprint(analysis);
-        return formattedAnalysis;
-      })
+  const analyses = blueprintKeys.map((blueprintKey) => {
+    const blueprint = groupedBlueprints[blueprintKey];
+
+    console.log(
+      `Formatting Blueprint for Product: ${blueprint[0].productTypeID} - ${blueprint[0].productName}`
     );
-
-    return blueprintGroup;
-  };
-
-  const analyses = await Promise.all(
-    marketGroups.map(async (marketGroup) => {
-      const blueprints = groupedBlueprints[marketGroup];
-      return await fetchMarketGroupBlueprints(blueprints);
-    })
-  );
-
-  console.log(analyses);
-
-  /*
-  const filteredResultSet = analyses.filter((value) => value !== null);
-
-  filteredResultSet.sort((a, b) => {
-    if (a.priceAnalysis.profitMargin < b.priceAnalysis.profitMargin) {
-      return 1;
+    const formattedAnalysis = formatBlueprint(blueprint);
+    try {
+      return {
+        blueprintTypeID: formattedAnalysis.blueprintTypeID,
+        blueprintName: formattedAnalysis.blueprintName,
+        productTypeID: formattedAnalysis.produces.productTypeID,
+        productName: formattedAnalysis.produces.productName,
+        productParentGroupName:
+          formattedAnalysis.produces.productParentGroupName,
+        unitPrice: formattedAnalysis.priceAnalysis.unitPrice,
+        baseTotalMaterialCost:
+          formattedAnalysis.priceAnalysis.baseTotalMaterialCost,
+        expectedRevenue: formatIsk(
+          formattedAnalysis.priceAnalysis.expectedRevenue
+        ),
+        baseExpectedProfit: formattedAnalysis.priceAnalysis.baseExpectedProfit,
+        baseProfitMargin: formattedAnalysis.priceAnalysis.baseProfitMargin
+      };
+    } catch (e) {
+      return {};
     }
-    if (a.priceAnalysis.profitMargin > b.priceAnalysis.profitMargin) {
-      return -1;
-    }
-    return 0;
   });
 
-  fs.writeFileSync(
-    `${__dirname}/../data/analyses.json`,
-    JSON.stringify(filteredResultSet)
-  );
-  */
+  const groupedAnalyses = groupBy(analyses, "productParentGroupName");
+
+  const productGroupKeys = Object.keys(groupedAnalyses);
+  productGroupKeys.forEach((productGroupKey) => {
+    const productGroup = groupedAnalyses[productGroupKey];
+    const filteredResultSet = productGroup.filter((value) => value !== null);
+    try {
+      filteredResultSet.sort((a, b) => {
+        if (a.baseProfitMargin < b.baseProfitMargin) {
+          return 1;
+        }
+        if (a.baseProfitMargin > b.baseProfitMargin) {
+          return -1;
+        }
+        return 0;
+      });
+    } catch (e) {}
+
+    fs.writeFileSync(
+      `${__dirname}/../data/analyses/${productGroupKey}.json`,
+      JSON.stringify(filteredResultSet, null, 2)
+    );
+  });
 };
 
 const run = async () => {

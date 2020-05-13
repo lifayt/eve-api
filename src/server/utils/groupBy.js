@@ -1,10 +1,12 @@
+const get = require("lodash.get");
+
 module.exports = (data, key) => {
   // `data` is an array of objects, `key` is the key (or property accessor) to group by
   // reduce runs this anonymous function on each element of `data` (the `item` parameter,
   // returning the `storage` parameter at the end
   return data.reduce(function (storage, item) {
     // get the first instance of the key by which we're grouping
-    const group = item[key];
+    const group = get(item, key);
 
     // set `storage` for this instance of group to the outer scope (if not empty) or initialize it
     storage[group] = storage[group] || [];

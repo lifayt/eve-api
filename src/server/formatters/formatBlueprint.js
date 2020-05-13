@@ -60,7 +60,11 @@ module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
     blueprintTypeID,
     blueprintName,
     productTypeID,
-    productName
+    productName,
+    productParentGroupId,
+    productParentGroupName,
+    productMarketGroupID,
+    productMarketGroupName
   } = rows[0];
 
   const materials = formatMaterials(
@@ -131,7 +135,11 @@ module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
       productTypeID,
       productName,
       productFivePercent,
-      productQuantity
+      productQuantity,
+      productParentGroupId,
+      productParentGroupName,
+      productMarketGroupID,
+      productMarketGroupName
     },
     materials,
     priceAnalysis
