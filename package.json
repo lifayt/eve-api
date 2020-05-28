@@ -27,15 +27,23 @@
   "dependencies": {
     "@hapi/hapi": "^19.1.1",
     "@hapi/inert": "^6.0.1",
+    "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "lodash.get": "^4.4.2",
     "mysql": "^2.18.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-json-pretty": "^2.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-syntax-async-generators": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
     "csv-parser": "^2.3.2",
     "nodemon": "^2.0.3"
   }
