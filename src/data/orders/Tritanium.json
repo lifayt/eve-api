@@ -1,0 +1,148 @@
+{
+  "blueprints": [
+    {
+      "blueprintTypeID": 16228,
+      "blueprintName": "Ferox Blueprint",
+      "produces": {
+        "productTypeID": 16227,
+        "productName": "Ferox",
+        "productFivePercent": "52482750.8091",
+        "productQuantity": 1,
+        "productParentGroupId": 469,
+        "productParentGroupName": "Standard Battlecruisers",
+        "productMarketGroupID": 471,
+        "productMarketGroupName": "Caldari"
+      },
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 7.98972500219,
+          "baseMaterialQuantity": 2555556,
+          "baseMaterialRunCost": 20418189.66769667,
+          "adjustedMaterialQuantity": 2183325,
+          "adjustedMaterialRunCost": 17444166.34040648,
+          "totalMaterialQuantity": 4366650,
+          "totalRunCost": 34888332.68081296
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.57398473392,
+          "baseMaterialQuantity": 666667,
+          "baseMaterialRunCost": 5049325.680608245,
+          "adjustedMaterialQuantity": 569564,
+          "adjustedMaterialRunCost": 4313869.04099041,
+          "totalMaterialQuantity": 1139127,
+          "totalRunCost": 8627738.08198082
+        },
+        {
+          "materialTypeID": 36,
+          "materialName": "Mexallon",
+          "materialPrice": 94.393206359,
+          "baseMaterialQuantity": 194444,
+          "baseMaterialRunCost": 18354192.617269397,
+          "adjustedMaterialQuantity": 166123,
+          "adjustedMaterialRunCost": 15680882.619976157,
+          "totalMaterialQuantity": 332245,
+          "totalRunCost": 31361765.239952315
+        },
+        {
+          "materialTypeID": 37,
+          "materialName": "Isogen",
+          "materialPrice": 19.9638661048,
+          "baseMaterialQuantity": 22222,
+          "baseMaterialRunCost": 443637.0325808656,
+          "adjustedMaterialQuantity": 18986,
+          "adjustedMaterialRunCost": 379033.9618657328,
+          "totalMaterialQuantity": 37971,
+          "totalRunCost": 758067.9237314656
+        },
+        {
+          "materialTypeID": 38,
+          "materialName": "Nocxium",
+          "materialPrice": 357.849537114,
+          "baseMaterialQuantity": 17222,
+          "baseMaterialRunCost": 6162884.728177308,
+          "adjustedMaterialQuantity": 14714,
+          "adjustedMaterialRunCost": 5265398.089095396,
+          "totalMaterialQuantity": 29428,
+          "totalRunCost": 10530796.178190792
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 919.9,
+          "baseMaterialQuantity": 8444,
+          "baseMaterialRunCost": 7767635.6,
+          "adjustedMaterialQuantity": 7215,
+          "adjustedMaterialRunCost": 6637078.5,
+          "totalMaterialQuantity": 14429,
+          "totalRunCost": 13274157
+        },
+        {
+          "materialTypeID": 40,
+          "materialName": "Megacyte",
+          "materialPrice": 616.86405324,
+          "baseMaterialQuantity": 1778,
+          "baseMaterialRunCost": 1096784.28666072,
+          "adjustedMaterialQuantity": 1520,
+          "adjustedMaterialRunCost": 937633.3609247999,
+          "totalMaterialQuantity": 3039,
+          "totalRunCost": 1875266.7218495999
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Ferox",
+        "unitPrice": "ISK 52,480,000",
+        "expectedRevenue": 104965501.6182,
+        "baseTotalMaterialCost": "ISK 59,290,000",
+        "baseUnitProductionPrice": "ISK 59,290,000",
+        "baseUnitProfit": "-ISK 6,810,000",
+        "baseExpectedProfit": "-ISK 13,620,000",
+        "baseProfitMargin": -11.485232736843166,
+        "adjustedTotalMaterialCost": "ISK 50,660,000",
+        "adjustedUnitProductionPrice": "ISK 50,660,000",
+        "adjustedUnitProfit": "ISK 1,825,000",
+        "adjustedExpectedProfit": "ISK 3,649,000",
+        "adjustedExpectedProfitRaw": 3649377.7916820496,
+        "adjustedProfitMargin": 3.6019713880199595,
+        "productSellVolume": 309,
+        "productNumOrders": 35
+      }
+    }
+  ],
+  "shoppingList": {
+    "Tritanium": {
+      "totalMaterialQuantity": 4366650,
+      "expectedTotalMaterialCost": 34888332.68081296
+    },
+    "Pyerite": {
+      "totalMaterialQuantity": 1139127,
+      "expectedTotalMaterialCost": 8627738.08198082
+    },
+    "Mexallon": {
+      "totalMaterialQuantity": 332245,
+      "expectedTotalMaterialCost": 31361765.239952315
+    },
+    "Isogen": {
+      "totalMaterialQuantity": 37971,
+      "expectedTotalMaterialCost": 758067.9237314656
+    },
+    "Nocxium": {
+      "totalMaterialQuantity": 29428,
+      "expectedTotalMaterialCost": 10530796.178190792
+    },
+    "Zydrine": {
+      "totalMaterialQuantity": 14429,
+      "expectedTotalMaterialCost": 13274157
+    },
+    "Megacyte": {
+      "totalMaterialQuantity": 3039,
+      "expectedTotalMaterialCost": 1875266.7218495999
+    }
+  },
+  "totalExpectedExpense": "ISK 101,300,000",
+  "totalExpectedRevenue": "ISK 105,000,000",
+  "totalExpectedProfit": "ISK 3,649,000"
+}

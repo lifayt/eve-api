@@ -27,7 +27,7 @@ module.exports = (blueprints) => {
     totalExpectedRevenue += blueprint.priceAnalysis.expectedRevenue;
   });
   return {
-    ...blueprints,
+    blueprints,
     shoppingList,
     totalExpectedExpense: formatIsk(totalExpectedExpense),
     totalExpectedRevenue: formatIsk(totalExpectedRevenue),

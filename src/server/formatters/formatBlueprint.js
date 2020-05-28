@@ -2,13 +2,19 @@
 const get = require("lodash.get");
 const formatIsk = require("./formatIsk");
 
+const nullsecSotiyoBonus = 0.958;
+
 const formatMaterials = (rows, materialEfficiency, stationBonus, runs) => {
   return rows.map((row) => {
     const { materialTypeID, materialName, materialQuantity } = row;
 
-    const adjustedMaterialQuantity = Math.max(
-      Math.ceil(
-        materialQuantity * ((100 - materialEfficiency) / 100) * stationBonus
+    const adjustedMaterialQuantity = Math.ceil(
+      Math.max(
+        materialQuantity *
+          ((100 - materialEfficiency) / 100) *
+          stationBonus *
+          nullsecSotiyoBonus,
+        1
       )
     );
 
@@ -22,7 +28,10 @@ const formatMaterials = (rows, materialEfficiency, stationBonus, runs) => {
 
     const totalMaterialQuantity = Math.ceil(
       Math.max(
-        materialQuantity * ((100 - materialEfficiency) / 100) * stationBonus,
+        materialQuantity *
+          ((100 - materialEfficiency) / 100) *
+          stationBonus *
+          nullsecSotiyoBonus,
         1
       ) * runs
     );
@@ -42,7 +51,12 @@ const formatMaterials = (rows, materialEfficiency, stationBonus, runs) => {
   });
 };
 
-module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
+module.exports = (
+  rows,
+  materialEfficiency = 10,
+  stationBonus = 0.99,
+  runs = 1
+) => {
   if (rows.length === 0) {
     return {};
   }
@@ -104,16 +118,20 @@ module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
 
   const baseTotalRunCost = baseTotalMaterialCost * runs;
 
-  const adjustedtotalRunCost = adjustedTotalMaterialCost * runs;
+  const adjustedTotalRunCost = adjustedTotalMaterialCost * runs;
 
   const expectedRevenue = unitPrice * productQuantity * runs;
+  const adjustedRevenue =
+    expectedRevenue - expectedRevenue * 0.028 - expectedRevenue * 0.035;
+
   const baseExpectedProfit = expectedRevenue - baseTotalRunCost;
-  const adjustedExpectedProfit = expectedRevenue - adjustedtotalRunCost;
+  const adjustedExpectedProfit = adjustedRevenue - adjustedTotalRunCost;
 
   const priceAnalysis = {
     productName,
     unitPrice: formatIsk(unitPrice),
     expectedRevenue,
+    adjustedRevenue,
     baseTotalMaterialCost: formatIsk(baseTotalMaterialCost),
     baseUnitProductionPrice: formatIsk(baseUnitProductionPrice),
     baseUnitProfit: formatIsk(baseUnitProfit),
@@ -123,6 +141,7 @@ module.exports = (rows, materialEfficiency = 1, stationBonus = 1, runs = 1) => {
     adjustedUnitProductionPrice: formatIsk(adjustedUnitProductionPrice),
     adjustedUnitProfit: formatIsk(adjustedUnitProfit),
     adjustedExpectedProfit: formatIsk(adjustedExpectedProfit),
+    adjustedExpectedProfitRaw: adjustedExpectedProfit,
     adjustedProfitMargin,
     productSellVolume: parseInt(productSellVolume),
     productNumOrders: parseInt(productNumOrders)

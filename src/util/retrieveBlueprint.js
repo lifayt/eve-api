@@ -52,14 +52,7 @@ const retrieveAllBlueprints = async () => {
         productName: formattedAnalysis.produces.productName,
         productParentGroupName:
           formattedAnalysis.produces.productParentGroupName,
-        unitPrice: formattedAnalysis.priceAnalysis.unitPrice,
-        baseTotalMaterialCost:
-          formattedAnalysis.priceAnalysis.baseTotalMaterialCost,
-        expectedRevenue: formatIsk(
-          formattedAnalysis.priceAnalysis.expectedRevenue
-        ),
-        baseExpectedProfit: formattedAnalysis.priceAnalysis.baseExpectedProfit,
-        baseProfitMargin: formattedAnalysis.priceAnalysis.baseProfitMargin
+        priceAnalysis: formattedAnalysis.priceAnalysis
       };
     } catch (e) {
       return {};
@@ -74,10 +67,16 @@ const retrieveAllBlueprints = async () => {
     const filteredResultSet = productGroup.filter((value) => value !== null);
     try {
       filteredResultSet.sort((a, b) => {
-        if (a.baseProfitMargin < b.baseProfitMargin) {
+        if (
+          a.priceAnalysis.adjustedExpectedProfitRaw <
+          b.priceAnalysis.adjustedExpectedProfitRaw
+        ) {
           return 1;
         }
-        if (a.baseProfitMargin > b.baseProfitMargin) {
+        if (
+          a.priceAnalysis.adjustedExpectedProfitRaw >
+          b.priceAnalysis.adjustedExpectedProfitRaw
+        ) {
           return -1;
         }
         return 0;
