@@ -4,9 +4,13 @@
   "description": "eve api wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js",
+    "format": "node ./src/util/formatEvePraisal.js",
+    "generate": "node ./src/util/generateOrder.js",
+    "import": "node ./src/util/import.js",
+    "retrieve": "node ./src/util/retrieveBlueprint.js",
     "start:dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "parcel watch ./src/client/public/index.html"
   },
   "repository": {

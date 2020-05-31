@@ -1,0 +1,3223 @@
+{
+  "blueprints": [
+    {
+      "blueprintTypeID": 45486,
+      "blueprintName": "Pacifier Blueprint",
+      "produces": {
+        "productTypeID": 44993,
+        "productName": "Pacifier",
+        "productFivePercent": "175749180.328",
+        "productQuantity": 1,
+        "productParentGroupId": 1612,
+        "productParentGroupName": "Special Edition Ships",
+        "productMarketGroupID": 1838,
+        "productMarketGroupName": "Special Edition Covert Ops"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 30,
+          "baseMaterialRunCost": 518358.542745,
+          "adjustedMaterialQuantity": 29,
+          "adjustedMaterialRunCost": 501079.9246535,
+          "totalMaterialQuantity": 57,
+          "totalRunCost": 1002159.849307
+        },
+        {
+          "materialTypeID": 11530,
+          "materialName": "Plasma Thruster",
+          "materialPrice": 53893.3542524,
+          "baseMaterialQuantity": 30,
+          "baseMaterialRunCost": 1616800.627572,
+          "adjustedMaterialQuantity": 29,
+          "adjustedMaterialRunCost": 1562907.2733196,
+          "totalMaterialQuantity": 57,
+          "totalRunCost": 3125814.5466392
+        },
+        {
+          "materialTypeID": 11534,
+          "materialName": "Gravimetric Sensor Cluster",
+          "materialPrice": 34880.6821376,
+          "baseMaterialQuantity": 68,
+          "baseMaterialRunCost": 2371886.3853568,
+          "adjustedMaterialQuantity": 64,
+          "adjustedMaterialRunCost": 2232363.6568064,
+          "totalMaterialQuantity": 128,
+          "totalRunCost": 4464727.3136128
+        },
+        {
+          "materialTypeID": 11541,
+          "materialName": "Photon Microprocessor",
+          "materialPrice": 65720,
+          "baseMaterialQuantity": 165,
+          "baseMaterialRunCost": 10843800,
+          "adjustedMaterialQuantity": 155,
+          "adjustedMaterialRunCost": 10186600,
+          "totalMaterialQuantity": 310,
+          "totalRunCost": 20373200
+        },
+        {
+          "materialTypeID": 11543,
+          "materialName": "Tungsten Carbide Armor Plate",
+          "materialPrice": 14289.9555312,
+          "baseMaterialQuantity": 300,
+          "baseMaterialRunCost": 4286986.65936,
+          "adjustedMaterialQuantity": 282,
+          "adjustedMaterialRunCost": 4029767.4597984,
+          "totalMaterialQuantity": 564,
+          "totalRunCost": 8059534.9195968
+        },
+        {
+          "materialTypeID": 11547,
+          "materialName": "Fusion Reactor Unit",
+          "materialPrice": 180000,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 540000,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 540000,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 1080000
+        },
+        {
+          "materialTypeID": 11554,
+          "materialName": "Tesseract Capacitor Unit",
+          "materialPrice": 77532.7551783,
+          "baseMaterialQuantity": 60,
+          "baseMaterialRunCost": 4651965.310698,
+          "adjustedMaterialQuantity": 57,
+          "adjustedMaterialRunCost": 4419367.0451631,
+          "totalMaterialQuantity": 113,
+          "totalRunCost": 8838734.0903262
+        },
+        {
+          "materialTypeID": 11558,
+          "materialName": "Sustained Shield Emitter",
+          "materialPrice": 59139.8093562,
+          "baseMaterialQuantity": 15,
+          "baseMaterialRunCost": 887097.140343,
+          "adjustedMaterialQuantity": 15,
+          "adjustedMaterialRunCost": 887097.140343,
+          "totalMaterialQuantity": 29,
+          "totalRunCost": 1774194.280686
+        },
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 8.13205985216,
+          "baseMaterialQuantity": 14000,
+          "baseMaterialRunCost": 113848.83793023998,
+          "adjustedMaterialQuantity": 13144,
+          "adjustedMaterialRunCost": 106887.79469679102,
+          "totalMaterialQuantity": 26288,
+          "totalRunCost": 213775.58939358205
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.8020084481,
+          "baseMaterialQuantity": 9000,
+          "baseMaterialRunCost": 70218.07603289999,
+          "adjustedMaterialQuantity": 8450,
+          "adjustedMaterialRunCost": 65926.971386445,
+          "totalMaterialQuantity": 16900,
+          "totalRunCost": 131853.94277289
+        },
+        {
+          "materialTypeID": 36,
+          "materialName": "Mexallon",
+          "materialPrice": 89.7615082178,
+          "baseMaterialQuantity": 3000,
+          "baseMaterialRunCost": 269284.5246534,
+          "adjustedMaterialQuantity": 2817,
+          "adjustedMaterialRunCost": 252858.1686495426,
+          "totalMaterialQuantity": 5634,
+          "totalRunCost": 505716.3372990852
+        },
+        {
+          "materialTypeID": 37,
+          "materialName": "Isogen",
+          "materialPrice": 21.2516307599,
+          "baseMaterialQuantity": 300,
+          "baseMaterialRunCost": 6375.48922797,
+          "adjustedMaterialQuantity": 282,
+          "adjustedMaterialRunCost": 5992.9598742918,
+          "totalMaterialQuantity": 564,
+          "totalRunCost": 11985.9197485836
+        },
+        {
+          "materialTypeID": 38,
+          "materialName": "Nocxium",
+          "materialPrice": 334.251298243,
+          "baseMaterialQuantity": 60,
+          "baseMaterialRunCost": 20055.07789458,
+          "adjustedMaterialQuantity": 57,
+          "adjustedMaterialRunCost": 19052.323999851,
+          "totalMaterialQuantity": 113,
+          "totalRunCost": 38104.647999702
+        },
+        {
+          "materialTypeID": 3828,
+          "materialName": "Construction Blocks",
+          "materialPrice": 8939.15880074,
+          "baseMaterialQuantity": 23,
+          "baseMaterialRunCost": 205600.65241702,
+          "adjustedMaterialQuantity": 22,
+          "adjustedMaterialRunCost": 196661.49361628,
+          "totalMaterialQuantity": 44,
+          "totalRunCost": 393322.98723256
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 1038.63930373,
+          "baseMaterialQuantity": 25,
+          "baseMaterialRunCost": 25965.98259325,
+          "adjustedMaterialQuantity": 24,
+          "adjustedMaterialRunCost": 24927.34328952,
+          "totalMaterialQuantity": 47,
+          "totalRunCost": 49854.68657904
+        },
+        {
+          "materialTypeID": 40,
+          "materialName": "Megacyte",
+          "materialPrice": 591.484249535,
+          "baseMaterialQuantity": 5,
+          "baseMaterialRunCost": 2957.421247675,
+          "adjustedMaterialQuantity": 5,
+          "adjustedMaterialRunCost": 2957.421247675,
+          "totalMaterialQuantity": 10,
+          "totalRunCost": 5914.84249535
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Pacifier",
+        "unitPrice": "ISK 175,700,000",
+        "expectedRevenue": 351498360.656,
+        "adjustedRevenue": 329353963.934672,
+        "baseTotalMaterialCost": "ISK 26,430,000",
+        "baseUnitProductionPrice": "ISK 26,430,000",
+        "baseUnitProfit": "ISK 149,300,000",
+        "baseExpectedProfit": "ISK 298,600,000",
+        "baseProfitMargin": 564.9307465677931,
+        "adjustedTotalMaterialCost": "ISK 25,030,000",
+        "adjustedUnitProductionPrice": "ISK 25,030,000",
+        "adjustedUnitProfit": "ISK 150,700,000",
+        "adjustedExpectedProfit": "ISK 279,300,000",
+        "adjustedExpectedProfitRaw": 279285069.9809832,
+        "adjustedProfitMargin": 602.0294096792279,
+        "productSellVolume": 61,
+        "productNumOrders": 23
+      }
+    },
+    {
+      "blueprintTypeID": 21494,
+      "blueprintName": "Limited Expanded 'Archiver' Cargo Blueprint",
+      "produces": {
+        "productTypeID": 21493,
+        "productName": "Limited Expanded 'Archiver' Cargo",
+        "productFivePercent": "44817755.102",
+        "productQuantity": 1,
+        "productParentGroupId": 135,
+        "productParentGroupName": "Hull Upgrades",
+        "productMarketGroupID": 1197,
+        "productMarketGroupName": "Expanded Cargoholds"
+      },
+      "materials": [
+        {
+          "materialTypeID": 20110,
+          "materialName": "Sleeper Foundation Block",
+          "materialPrice": 4000000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 4000000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 4000000,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 12000000
+        },
+        {
+          "materialTypeID": 21073,
+          "materialName": "Sleeper Split Cables",
+          "materialPrice": 191320.04717,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 191320.04717,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 191320.04717,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 573960.14151
+        },
+        {
+          "materialTypeID": 21570,
+          "materialName": "Sleeper Manuscripts",
+          "materialPrice": 3144269.37269,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 3144269.37269,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 3144269.37269,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 9432808.11807
+        },
+        {
+          "materialTypeID": 21572,
+          "materialName": "Sleeper Data Crystals",
+          "materialPrice": 175000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 175000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 175000,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 525000
+        },
+        {
+          "materialTypeID": 21721,
+          "materialName": "Sleeper Heat Nullifying Coil",
+          "materialPrice": 2428620.25316,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 2428620.25316,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 2428620.25316,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 7285860.75948
+        },
+        {
+          "materialTypeID": 21722,
+          "materialName": "Sleeper Nanite Cluster",
+          "materialPrice": 3569856.11511,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 3569856.11511,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 3569856.11511,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 10709568.34533
+        },
+        {
+          "materialTypeID": 37,
+          "materialName": "Isogen",
+          "materialPrice": 21.2516307599,
+          "baseMaterialQuantity": 10,
+          "baseMaterialRunCost": 212.516307599,
+          "adjustedMaterialQuantity": 10,
+          "adjustedMaterialRunCost": 212.516307599,
+          "totalMaterialQuantity": 29,
+          "totalRunCost": 637.5489227969999
+        },
+        {
+          "materialTypeID": 38,
+          "materialName": "Nocxium",
+          "materialPrice": 334.251298243,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 334.251298243,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 334.251298243,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 1002.753894729
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Limited Expanded 'Archiver' Cargo",
+        "unitPrice": "ISK 44,820,000",
+        "expectedRevenue": 134453265.306,
+        "adjustedRevenue": 125982709.59172198,
+        "baseTotalMaterialCost": "ISK 13,510,000",
+        "baseUnitProductionPrice": "ISK 13,510,000",
+        "baseUnitProfit": "ISK 31,310,000",
+        "baseExpectedProfit": "ISK 93,920,000",
+        "baseProfitMargin": 231.74715349606015,
+        "adjustedTotalMaterialCost": "ISK 13,510,000",
+        "adjustedUnitProductionPrice": "ISK 13,510,000",
+        "adjustedUnitProfit": "ISK 31,310,000",
+        "adjustedExpectedProfit": "ISK 85,450,000",
+        "adjustedExpectedProfitRaw": 85453871.92451444,
+        "adjustedProfitMargin": 231.74715349606015,
+        "productSellVolume": 49,
+        "productNumOrders": 19
+      }
+    },
+    {
+      "blueprintTypeID": 23869,
+      "blueprintName": "'Warhammer' Large EMP Smartbomb I Blueprint",
+      "produces": {
+        "productTypeID": 23868,
+        "productName": "'Warhammer' Large EMP Smartbomb I",
+        "productFivePercent": "64661818.1818",
+        "productQuantity": 1,
+        "productParentGroupId": 141,
+        "productParentGroupName": "Smartbombs",
+        "productMarketGroupID": 381,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 23152,
+          "materialName": "Blood Raider Power Redistributor",
+          "materialPrice": 19163333.3333,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 38326666.6666,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 38326666.6666,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 114979999.9998
+        },
+        {
+          "materialTypeID": 23162,
+          "materialName": "Analog Panel",
+          "materialPrice": 573.5,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 1147,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 1147,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 3441
+        },
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 8.13205985216,
+          "baseMaterialQuantity": 46329,
+          "baseMaterialRunCost": 376750.2008907206,
+          "adjustedMaterialQuantity": 43496,
+          "adjustedMaterialRunCost": 353712.07532955136,
+          "totalMaterialQuantity": 130487,
+          "totalRunCost": 1061136.225988654
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.8020084481,
+          "baseMaterialQuantity": 36498,
+          "baseMaterialRunCost": 284757.70433875377,
+          "adjustedMaterialQuantity": 34266,
+          "adjustedMaterialRunCost": 267343.6214825946,
+          "totalMaterialQuantity": 102798,
+          "totalRunCost": 802030.8644477837
+        },
+        {
+          "materialTypeID": 38,
+          "materialName": "Nocxium",
+          "materialPrice": 334.251298243,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 1002.753894729,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 1002.753894729,
+          "totalMaterialQuantity": 9,
+          "totalRunCost": 3008.261684187
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 1038.63930373,
+          "baseMaterialQuantity": 4,
+          "baseMaterialRunCost": 4154.55721492,
+          "adjustedMaterialQuantity": 4,
+          "adjustedMaterialRunCost": 4154.55721492,
+          "totalMaterialQuantity": 12,
+          "totalRunCost": 12463.67164476
+        },
+        {
+          "materialTypeID": 40,
+          "materialName": "Megacyte",
+          "materialPrice": 591.484249535,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 1182.96849907,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 1182.96849907,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 3548.9054972100002
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "'Warhammer' Large EMP Smartbomb I",
+        "unitPrice": "ISK 64,660,000",
+        "expectedRevenue": 193985454.5454,
+        "adjustedRevenue": 181764370.9090398,
+        "baseTotalMaterialCost": "ISK 39,000,000",
+        "baseUnitProductionPrice": "ISK 39,000,000",
+        "baseUnitProfit": "ISK 25,670,000",
+        "baseExpectedProfit": "ISK 77,000,000",
+        "baseProfitMargin": 65.81797849243381,
+        "adjustedTotalMaterialCost": "ISK 38,960,000",
+        "adjustedUnitProductionPrice": "ISK 38,960,000",
+        "adjustedUnitProfit": "ISK 25,710,000",
+        "adjustedExpectedProfit": "ISK 64,900,000",
+        "adjustedExpectedProfitRaw": 64898741.97997719,
+        "adjustedProfitMargin": 65.9901686432964,
+        "productSellVolume": 66,
+        "productNumOrders": 28
+      }
+    },
+    {
+      "blueprintTypeID": 33701,
+      "blueprintName": "'Packrat' Mobile Tractor Unit Blueprint",
+      "produces": {
+        "productTypeID": 33700,
+        "productName": "'Packrat' Mobile Tractor Unit",
+        "productFivePercent": "45077439.0244",
+        "productQuantity": 1,
+        "productParentGroupId": 404,
+        "productParentGroupName": "Deployable Structures",
+        "productMarketGroupID": 1833,
+        "productMarketGroupName": "Mobile Tractor Units"
+      },
+      "materials": [
+        {
+          "materialTypeID": 17136,
+          "materialName": "Ukomi Superconductors",
+          "materialPrice": 88142.8266936,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 176285.6533872,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 176285.6533872,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 176285.6533872
+        },
+        {
+          "materialTypeID": 24348,
+          "materialName": "Small Tractor Beam I",
+          "materialPrice": 1399509.20245,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 1399509.20245,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 1399509.20245,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 1399509.20245
+        },
+        {
+          "materialTypeID": 2870,
+          "materialName": "Organic Mortar Applicators",
+          "materialPrice": 979513.85263,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 1959027.70526,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 1959027.70526,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 1959027.70526
+        },
+        {
+          "materialTypeID": 2876,
+          "materialName": "Wetware Mainframe",
+          "materialPrice": 1992731.73213,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 1992731.73213,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 1992731.73213,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 1992731.73213
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 1038.63930373,
+          "baseMaterialQuantity": 948,
+          "baseMaterialRunCost": 984630.05993604,
+          "adjustedMaterialQuantity": 891,
+          "adjustedMaterialRunCost": 925427.61962343,
+          "totalMaterialQuantity": 891,
+          "totalRunCost": 925427.61962343
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "'Packrat' Mobile Tractor Unit",
+        "unitPrice": "ISK 45,080,000",
+        "expectedRevenue": 45077439.0244,
+        "adjustedRevenue": 42237560.3658628,
+        "baseTotalMaterialCost": "ISK 6,512,000",
+        "baseUnitProductionPrice": "ISK 6,512,000",
+        "baseUnitProfit": "ISK 38,570,000",
+        "baseExpectedProfit": "ISK 38,570,000",
+        "baseProfitMargin": 592.2015191800276,
+        "adjustedTotalMaterialCost": "ISK 6,453,000",
+        "adjustedUnitProductionPrice": "ISK 6,453,000",
+        "adjustedUnitProfit": "ISK 38,620,000",
+        "adjustedExpectedProfit": "ISK 35,780,000",
+        "adjustedExpectedProfitRaw": 35784578.45301217,
+        "adjustedProfitMargin": 598.5520745786017,
+        "productSellVolume": 328,
+        "productNumOrders": 43
+      }
+    },
+    {
+      "blueprintTypeID": 34295,
+      "blueprintName": "Polarized Torpedo Launcher Blueprint",
+      "produces": {
+        "productTypeID": 34294,
+        "productName": "Polarized Torpedo Launcher",
+        "productFivePercent": "24079276.0823",
+        "productQuantity": 1,
+        "productParentGroupId": 140,
+        "productParentGroupName": "Missile Launchers",
+        "productMarketGroupID": 644,
+        "productMarketGroupName": "Torpedo Launchers"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 12,
+          "baseMaterialRunCost": 207343.417098,
+          "adjustedMaterialQuantity": 12,
+          "adjustedMaterialRunCost": 207343.417098,
+          "totalMaterialQuantity": 12,
+          "totalRunCost": 207343.417098
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11540,
+          "materialName": "Quantum Microprocessor",
+          "materialPrice": 74818.8551746,
+          "baseMaterialQuantity": 12,
+          "baseMaterialRunCost": 897826.2620952,
+          "adjustedMaterialQuantity": 12,
+          "adjustedMaterialRunCost": 897826.2620952,
+          "totalMaterialQuantity": 12,
+          "totalRunCost": 897826.2620952
+        },
+        {
+          "materialTypeID": 2420,
+          "materialName": "Torpedo Launcher II",
+          "materialPrice": 4749132.99045,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 4749132.99045,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 4749132.99045,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 4749132.99045
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 12,
+          "baseMaterialRunCost": 1055946.9226584,
+          "adjustedMaterialQuantity": 12,
+          "adjustedMaterialRunCost": 1055946.9226584,
+          "totalMaterialQuantity": 12,
+          "totalRunCost": 1055946.9226584
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Torpedo Launcher",
+        "unitPrice": "ISK 24,080,000",
+        "expectedRevenue": 24079276.0823,
+        "adjustedRevenue": 22562281.6891151,
+        "baseTotalMaterialCost": "ISK 6,911,000",
+        "baseUnitProductionPrice": "ISK 6,911,000",
+        "baseUnitProfit": "ISK 17,170,000",
+        "baseExpectedProfit": "ISK 17,170,000",
+        "baseProfitMargin": 248.434810823207,
+        "adjustedTotalMaterialCost": "ISK 6,911,000",
+        "adjustedUnitProductionPrice": "ISK 6,911,000",
+        "adjustedUnitProfit": "ISK 17,170,000",
+        "adjustedExpectedProfit": "ISK 15,650,000",
+        "adjustedExpectedProfitRaw": 15651584.0968135,
+        "adjustedProfitMargin": 248.434810823207,
+        "productSellVolume": 1409,
+        "productNumOrders": 59
+      }
+    },
+    {
+      "blueprintTypeID": 34273,
+      "blueprintName": "Polarized Small Focused Pulse Laser Blueprint",
+      "produces": {
+        "productTypeID": 34272,
+        "productName": "Polarized Small Focused Pulse Laser",
+        "productFivePercent": "2908445.629",
+        "productQuantity": 1,
+        "productParentGroupId": 558,
+        "productParentGroupName": "Pulse Lasers",
+        "productMarketGroupID": 570,
+        "productMarketGroupName": "Small"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 51835.8542745,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 51835.8542745,
+          "totalMaterialQuantity": 29,
+          "totalRunCost": 518358.542745
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 10,
+          "totalRunCost": 4480
+        },
+        {
+          "materialTypeID": 11689,
+          "materialName": "Laser Focusing Crystals",
+          "materialPrice": 41278.6382562,
+          "baseMaterialQuantity": 4,
+          "baseMaterialRunCost": 165114.5530248,
+          "adjustedMaterialQuantity": 4,
+          "adjustedMaterialRunCost": 165114.5530248,
+          "totalMaterialQuantity": 38,
+          "totalRunCost": 1651145.530248
+        },
+        {
+          "materialTypeID": 3041,
+          "materialName": "Small Focused Pulse Laser II",
+          "materialPrice": 999766.423358,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 999766.423358,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 999766.423358,
+          "totalMaterialQuantity": 10,
+          "totalRunCost": 9997664.23358
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 87995.5768882,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 87995.5768882,
+          "totalMaterialQuantity": 10,
+          "totalRunCost": 879955.768882
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Small Focused Pulse Laser",
+        "unitPrice": "ISK 2,908,000",
+        "expectedRevenue": 29084456.290000003,
+        "adjustedRevenue": 27252135.543730002,
+        "baseTotalMaterialCost": "ISK 1,305,000",
+        "baseUnitProductionPrice": "ISK 1,305,000",
+        "baseUnitProfit": "ISK 1,603,000",
+        "baseExpectedProfit": "ISK 16,030,000",
+        "baseProfitMargin": 122.84200564049115,
+        "adjustedTotalMaterialCost": "ISK 1,305,000",
+        "adjustedUnitProductionPrice": "ISK 1,305,000",
+        "adjustedUnitProfit": "ISK 1,603,000",
+        "adjustedExpectedProfit": "ISK 14,200,000",
+        "adjustedExpectedProfitRaw": 14200531.468275003,
+        "adjustedProfitMargin": 122.84200564049115,
+        "productSellVolume": 469,
+        "productNumOrders": 43
+      }
+    },
+    {
+      "blueprintTypeID": 34291,
+      "blueprintName": "Polarized Rocket Launcher Blueprint",
+      "produces": {
+        "productTypeID": 34290,
+        "productName": "Polarized Rocket Launcher",
+        "productFivePercent": "10070000",
+        "productQuantity": 1,
+        "productParentGroupId": 140,
+        "productParentGroupName": "Missile Launchers",
+        "productMarketGroupID": 639,
+        "productMarketGroupName": "Rocket Launchers"
+      },
+      "materials": [
+        {
+          "materialTypeID": 10631,
+          "materialName": "Rocket Launcher II",
+          "materialPrice": 410330.530921,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 410330.530921,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 410330.530921,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 410330.530921
+        },
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 17278.6180915,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 17278.6180915,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 17278.6180915
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 87995.5768882,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 87995.5768882,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 87995.5768882
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Rocket Launcher",
+        "unitPrice": "ISK 10,070,000",
+        "expectedRevenue": 10070000,
+        "adjustedRevenue": 9435590,
+        "baseTotalMaterialCost": "ISK 516,100",
+        "baseUnitProductionPrice": "ISK 516,100",
+        "baseUnitProfit": "ISK 9,554,000",
+        "baseExpectedProfit": "ISK 9,554,000",
+        "baseProfitMargin": 1851.3509946922927,
+        "adjustedTotalMaterialCost": "ISK 516,100",
+        "adjustedUnitProductionPrice": "ISK 516,100",
+        "adjustedUnitProfit": "ISK 9,554,000",
+        "adjustedExpectedProfit": "ISK 8,920,000",
+        "adjustedExpectedProfitRaw": 8919537.2740993,
+        "adjustedProfitMargin": 1851.3509946922927,
+        "productSellVolume": 883,
+        "productNumOrders": 58
+      }
+    },
+    {
+      "blueprintTypeID": 41535,
+      "blueprintName": "Ligature Integrated Analyzer Blueprint",
+      "produces": {
+        "productTypeID": 41533,
+        "productName": "Ligature Integrated Analyzer",
+        "productFivePercent": "104462068.966",
+        "productQuantity": 1,
+        "productParentGroupId": 1708,
+        "productParentGroupName": "Scanning Equipment",
+        "productMarketGroupID": 1718,
+        "productMarketGroupName": "Analyzers"
+      },
+      "materials": [
+        {
+          "materialTypeID": 17893,
+          "materialName": "High-Tech Data Chip",
+          "materialPrice": 198362.890981,
+          "baseMaterialQuantity": 50,
+          "baseMaterialRunCost": 9918144.54905,
+          "adjustedMaterialQuantity": 47,
+          "adjustedMaterialRunCost": 9323055.876107,
+          "totalMaterialQuantity": 141,
+          "totalRunCost": 27969167.628321
+        },
+        {
+          "materialTypeID": 17894,
+          "materialName": "High-Tech Scanner",
+          "materialPrice": 489178.730836,
+          "baseMaterialQuantity": 50,
+          "baseMaterialRunCost": 24458936.5418,
+          "adjustedMaterialQuantity": 47,
+          "adjustedMaterialRunCost": 22991400.349292,
+          "totalMaterialQuantity": 141,
+          "totalRunCost": 68974201.047876
+        },
+        {
+          "materialTypeID": 17895,
+          "materialName": "High-Tech Manufacturing Tools",
+          "materialPrice": 1354519.07357,
+          "baseMaterialQuantity": 50,
+          "baseMaterialRunCost": 67725953.6785,
+          "adjustedMaterialQuantity": 47,
+          "adjustedMaterialRunCost": 63662396.45779,
+          "totalMaterialQuantity": 141,
+          "totalRunCost": 190987189.37337
+        },
+        {
+          "materialTypeID": 22175,
+          "materialName": "Data Analyzer I",
+          "materialPrice": 53036.0930465,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 53036.0930465,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 53036.0930465,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 159108.2791395
+        },
+        {
+          "materialTypeID": 22177,
+          "materialName": "Relic Analyzer I",
+          "materialPrice": 51911.8437118,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 51911.8437118,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 51911.8437118,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 155735.5311354
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Ligature Integrated Analyzer",
+        "unitPrice": "ISK 104,500,000",
+        "expectedRevenue": 313386206.898,
+        "adjustedRevenue": 293642875.863426,
+        "baseTotalMaterialCost": "ISK 102,200,000",
+        "baseUnitProductionPrice": "ISK 102,200,000",
+        "baseUnitProfit": "ISK 2,254,000",
+        "baseExpectedProfit": "ISK 6,762,000",
+        "baseProfitMargin": 2.2053915948749148,
+        "adjustedTotalMaterialCost": "ISK 96,080,000",
+        "adjustedUnitProductionPrice": "ISK 96,080,000",
+        "adjustedUnitProfit": "ISK 8,380,000",
+        "adjustedExpectedProfit": "ISK 5,397,000",
+        "adjustedExpectedProfitRaw": 5397474.0035841465,
+        "adjustedProfitMargin": 8.72201425450066,
+        "productSellVolume": 58,
+        "productNumOrders": 14
+      }
+    },
+    {
+      "blueprintTypeID": 34283,
+      "blueprintName": "Polarized Neutron Blaster Cannon Blueprint",
+      "produces": {
+        "productTypeID": 34282,
+        "productName": "Polarized Neutron Blaster Cannon",
+        "productFivePercent": "12252000",
+        "productQuantity": 1,
+        "productParentGroupId": 556,
+        "productParentGroupName": "Blasters",
+        "productMarketGroupID": 563,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 7,
+          "baseMaterialRunCost": 120950.3266405,
+          "adjustedMaterialQuantity": 7,
+          "adjustedMaterialRunCost": 120950.3266405,
+          "totalMaterialQuantity": 7,
+          "totalRunCost": 120950.3266405
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11688,
+          "materialName": "Particle Accelerator Unit",
+          "materialPrice": 35000,
+          "baseMaterialQuantity": 17,
+          "baseMaterialRunCost": 595000,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 560000,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 560000
+        },
+        {
+          "materialTypeID": 3186,
+          "materialName": "Neutron Blaster Cannon II",
+          "materialPrice": 5819000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 5819000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 5819000,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 5819000
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 7,
+          "baseMaterialRunCost": 615969.0382174,
+          "adjustedMaterialQuantity": 7,
+          "adjustedMaterialRunCost": 615969.0382174,
+          "totalMaterialQuantity": 7,
+          "totalRunCost": 615969.0382174
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Neutron Blaster Cannon",
+        "unitPrice": "ISK 12,250,000",
+        "expectedRevenue": 12252000,
+        "adjustedRevenue": 11480124,
+        "baseTotalMaterialCost": "ISK 7,151,000",
+        "baseUnitProductionPrice": "ISK 7,151,000",
+        "baseUnitProfit": "ISK 5,101,000",
+        "baseExpectedProfit": "ISK 5,101,000",
+        "baseProfitMargin": 71.32387940531218,
+        "adjustedTotalMaterialCost": "ISK 7,116,000",
+        "adjustedUnitProductionPrice": "ISK 7,116,000",
+        "adjustedUnitProfit": "ISK 5,136,000",
+        "adjustedExpectedProfit": "ISK 4,364,000",
+        "adjustedExpectedProfitRaw": 4363756.6351421,
+        "adjustedProfitMargin": 72.16649129867749,
+        "productSellVolume": 500,
+        "productNumOrders": 23
+      }
+    },
+    {
+      "blueprintTypeID": 34283,
+      "blueprintName": "Polarized Neutron Blaster Cannon Blueprint",
+      "produces": {
+        "productTypeID": 34282,
+        "productName": "Polarized Neutron Blaster Cannon",
+        "productFivePercent": "12252000",
+        "productQuantity": 1,
+        "productParentGroupId": 556,
+        "productParentGroupName": "Blasters",
+        "productMarketGroupID": 563,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 7,
+          "baseMaterialRunCost": 120950.3266405,
+          "adjustedMaterialQuantity": 7,
+          "adjustedMaterialRunCost": 120950.3266405,
+          "totalMaterialQuantity": 7,
+          "totalRunCost": 120950.3266405
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11688,
+          "materialName": "Particle Accelerator Unit",
+          "materialPrice": 35000,
+          "baseMaterialQuantity": 17,
+          "baseMaterialRunCost": 595000,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 560000,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 560000
+        },
+        {
+          "materialTypeID": 3186,
+          "materialName": "Neutron Blaster Cannon II",
+          "materialPrice": 5819000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 5819000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 5819000,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 5819000
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 7,
+          "baseMaterialRunCost": 615969.0382174,
+          "adjustedMaterialQuantity": 7,
+          "adjustedMaterialRunCost": 615969.0382174,
+          "totalMaterialQuantity": 7,
+          "totalRunCost": 615969.0382174
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Neutron Blaster Cannon",
+        "unitPrice": "ISK 12,250,000",
+        "expectedRevenue": 12252000,
+        "adjustedRevenue": 11480124,
+        "baseTotalMaterialCost": "ISK 7,151,000",
+        "baseUnitProductionPrice": "ISK 7,151,000",
+        "baseUnitProfit": "ISK 5,101,000",
+        "baseExpectedProfit": "ISK 5,101,000",
+        "baseProfitMargin": 71.32387940531218,
+        "adjustedTotalMaterialCost": "ISK 7,116,000",
+        "adjustedUnitProductionPrice": "ISK 7,116,000",
+        "adjustedUnitProfit": "ISK 5,136,000",
+        "adjustedExpectedProfit": "ISK 4,364,000",
+        "adjustedExpectedProfitRaw": 4363756.6351421,
+        "adjustedProfitMargin": 72.16649129867749,
+        "productSellVolume": 500,
+        "productNumOrders": 23
+      }
+    },
+    {
+      "blueprintTypeID": 33521,
+      "blueprintName": "'Wetu' Mobile Depot Blueprint",
+      "produces": {
+        "productTypeID": 33520,
+        "productName": "'Wetu' Mobile Depot",
+        "productFivePercent": "5543888.19876",
+        "productQuantity": 1,
+        "productParentGroupId": 404,
+        "productParentGroupName": "Deployable Structures",
+        "productMarketGroupID": 1831,
+        "productMarketGroupName": "Mobile Depots"
+      },
+      "materials": [
+        {
+          "materialTypeID": 17898,
+          "materialName": "High-Tech Transmitters",
+          "materialPrice": 89832.3563333,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 89832.3563333,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 89832.3563333,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 89832.3563333
+        },
+        {
+          "materialTypeID": 2351,
+          "materialName": "Smartfab Units",
+          "materialPrice": 79966.0586895,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 239898.1760685,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 239898.1760685,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 239898.1760685
+        },
+        {
+          "materialTypeID": 2352,
+          "materialName": "Nuclear Reactors",
+          "materialPrice": 89442.1591633,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 89442.1591633,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 89442.1591633,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 89442.1591633
+        },
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 8.13205985216,
+          "baseMaterialQuantity": 5556,
+          "baseMaterialRunCost": 45181.72453860096,
+          "adjustedMaterialQuantity": 5217,
+          "adjustedMaterialRunCost": 42424.956248718714,
+          "totalMaterialQuantity": 5217,
+          "totalRunCost": 42424.956248718714
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.8020084481,
+          "baseMaterialQuantity": 222,
+          "baseMaterialRunCost": 1732.0458754781998,
+          "adjustedMaterialQuantity": 209,
+          "adjustedMaterialRunCost": 1630.6197656529,
+          "totalMaterialQuantity": 209,
+          "totalRunCost": 1630.6197656529
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 1038.63930373,
+          "baseMaterialQuantity": 444,
+          "baseMaterialRunCost": 461155.85085612,
+          "adjustedMaterialQuantity": 417,
+          "adjustedMaterialRunCost": 433112.58965541,
+          "totalMaterialQuantity": 417,
+          "totalRunCost": 433112.58965541
+        },
+        {
+          "materialTypeID": 9834,
+          "materialName": "Guidance Systems",
+          "materialPrice": 106702.92203,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 320108.76609,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 320108.76609,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 320108.76609
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "'Wetu' Mobile Depot",
+        "unitPrice": "ISK 5,544,000",
+        "expectedRevenue": 5543888.19876,
+        "adjustedRevenue": 5194623.24223812,
+        "baseTotalMaterialCost": "ISK 1,247,000",
+        "baseUnitProductionPrice": "ISK 1,247,000",
+        "baseUnitProfit": "ISK 4,297,000",
+        "baseExpectedProfit": "ISK 4,297,000",
+        "baseProfitMargin": 344.4529124500007,
+        "adjustedTotalMaterialCost": "ISK 1,216,000",
+        "adjustedUnitProductionPrice": "ISK 1,216,000",
+        "adjustedUnitProfit": "ISK 4,327,000",
+        "adjustedExpectedProfit": "ISK 3,978,000",
+        "adjustedExpectedProfitRaw": 3978173.6189132384,
+        "adjustedProfitMargin": 355.7433446037061,
+        "productSellVolume": 644,
+        "productNumOrders": 82
+      }
+    },
+    {
+      "blueprintTypeID": 41536,
+      "blueprintName": "Zeugma Integrated Analyzer Blueprint",
+      "produces": {
+        "productTypeID": 41534,
+        "productName": "Zeugma Integrated Analyzer",
+        "productFivePercent": "208692307.692",
+        "productQuantity": 1,
+        "productParentGroupId": 1708,
+        "productParentGroupName": "Scanning Equipment",
+        "productMarketGroupID": 1718,
+        "productMarketGroupName": "Analyzers"
+      },
+      "materials": [
+        {
+          "materialTypeID": 17893,
+          "materialName": "High-Tech Data Chip",
+          "materialPrice": 198362.890981,
+          "baseMaterialQuantity": 100,
+          "baseMaterialRunCost": 19836289.0981,
+          "adjustedMaterialQuantity": 94,
+          "adjustedMaterialRunCost": 18646111.752214,
+          "totalMaterialQuantity": 282,
+          "totalRunCost": 55938335.256642
+        },
+        {
+          "materialTypeID": 17894,
+          "materialName": "High-Tech Scanner",
+          "materialPrice": 489178.730836,
+          "baseMaterialQuantity": 100,
+          "baseMaterialRunCost": 48917873.0836,
+          "adjustedMaterialQuantity": 94,
+          "adjustedMaterialRunCost": 45982800.698584,
+          "totalMaterialQuantity": 282,
+          "totalRunCost": 137948402.095752
+        },
+        {
+          "materialTypeID": 17895,
+          "materialName": "High-Tech Manufacturing Tools",
+          "materialPrice": 1354519.07357,
+          "baseMaterialQuantity": 100,
+          "baseMaterialRunCost": 135451907.357,
+          "adjustedMaterialQuantity": 94,
+          "adjustedMaterialRunCost": 127324792.91558,
+          "totalMaterialQuantity": 282,
+          "totalRunCost": 381974378.74674
+        },
+        {
+          "materialTypeID": 30832,
+          "materialName": "Relic Analyzer II",
+          "materialPrice": 1207000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 1207000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 1207000,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 3621000
+        },
+        {
+          "materialTypeID": 30834,
+          "materialName": "Data Analyzer II",
+          "materialPrice": 1203983.3749,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 1203983.3749,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 1203983.3749,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 3611950.1246999996
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Zeugma Integrated Analyzer",
+        "unitPrice": "ISK 208,700,000",
+        "expectedRevenue": 626076923.076,
+        "adjustedRevenue": 586634076.922212,
+        "baseTotalMaterialCost": "ISK 206,600,000",
+        "baseUnitProductionPrice": "ISK 206,600,000",
+        "baseUnitProfit": "ISK 2,075,000",
+        "baseExpectedProfit": "ISK 6,226,000",
+        "baseProfitMargin": 1.0043966599735612,
+        "adjustedTotalMaterialCost": "ISK 194,400,000",
+        "adjustedUnitProductionPrice": "ISK 194,400,000",
+        "adjustedUnitProfit": "ISK 14,330,000",
+        "adjustedExpectedProfit": "ISK 3,540,000",
+        "adjustedExpectedProfitRaw": 3540010.698377967,
+        "adjustedProfitMargin": 7.371513335837306,
+        "productSellVolume": 78,
+        "productNumOrders": 19
+      }
+    },
+    {
+      "blueprintTypeID": 34277,
+      "blueprintName": "Polarized Mega Pulse Laser Blueprint",
+      "produces": {
+        "productTypeID": 34276,
+        "productName": "Polarized Mega Pulse Laser",
+        "productFivePercent": "9470762.37624",
+        "productQuantity": 1,
+        "productParentGroupId": 558,
+        "productParentGroupName": "Pulse Lasers",
+        "productMarketGroupID": 573,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 17,
+          "baseMaterialRunCost": 293736.5075555,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 276457.889464,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 276457.889464
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11689,
+          "materialName": "Laser Focusing Crystals",
+          "materialPrice": 41278.6382562,
+          "baseMaterialQuantity": 16,
+          "baseMaterialRunCost": 660458.2120992,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 660458.2120992,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 660458.2120992
+        },
+        {
+          "materialTypeID": 3057,
+          "materialName": "Mega Pulse Laser II",
+          "materialPrice": 5048618.78453,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 5048618.78453,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 5048618.78453,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 5048618.78453
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 7,
+          "baseMaterialRunCost": 615969.0382174,
+          "adjustedMaterialQuantity": 7,
+          "adjustedMaterialRunCost": 615969.0382174,
+          "totalMaterialQuantity": 7,
+          "totalRunCost": 615969.0382174
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Mega Pulse Laser",
+        "unitPrice": "ISK 9,471,000",
+        "expectedRevenue": 9470762.37624,
+        "adjustedRevenue": 8874104.34653688,
+        "baseTotalMaterialCost": "ISK 6,619,000",
+        "baseUnitProductionPrice": "ISK 6,619,000",
+        "baseUnitProfit": "ISK 2,852,000",
+        "baseExpectedProfit": "ISK 2,852,000",
+        "baseProfitMargin": 43.07950622918003,
+        "adjustedTotalMaterialCost": "ISK 6,602,000",
+        "adjustedUnitProductionPrice": "ISK 6,602,000",
+        "adjustedUnitProfit": "ISK 2,869,000",
+        "adjustedExpectedProfit": "ISK 2,272,000",
+        "adjustedExpectedProfitRaw": 2272152.42222628,
+        "adjustedProfitMargin": 43.453973685653146,
+        "productSellVolume": 505,
+        "productNumOrders": 52
+      }
+    },
+    {
+      "blueprintTypeID": 34285,
+      "blueprintName": "Polarized 200mm AutoCannon Blueprint",
+      "produces": {
+        "productTypeID": 34284,
+        "productName": "Polarized 200mm AutoCannon",
+        "productFivePercent": "1667090.04739",
+        "productQuantity": 1,
+        "productParentGroupId": 559,
+        "productParentGroupName": "Autocannons",
+        "productMarketGroupID": 574,
+        "productMarketGroupName": "Small"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 34557.236183,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 34557.236183,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 103671.708549
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 1344
+        },
+        {
+          "materialTypeID": 11691,
+          "materialName": "Thermonuclear Trigger Unit",
+          "materialPrice": 41737.3962789,
+          "baseMaterialQuantity": 4,
+          "baseMaterialRunCost": 166949.5851156,
+          "adjustedMaterialQuantity": 4,
+          "adjustedMaterialRunCost": 166949.5851156,
+          "totalMaterialQuantity": 12,
+          "totalRunCost": 500848.75534679997
+        },
+        {
+          "materialTypeID": 2889,
+          "materialName": "200mm AutoCannon II",
+          "materialPrice": 717129.008512,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 717129.008512,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 717129.008512,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 2151387.025536
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 87995.5768882,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 87995.5768882,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 263986.7306646
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized 200mm AutoCannon",
+        "unitPrice": "ISK 1,667,000",
+        "expectedRevenue": 5001270.14217,
+        "adjustedRevenue": 4686190.12321329,
+        "baseTotalMaterialCost": "ISK 1,007,000",
+        "baseUnitProductionPrice": "ISK 1,007,000",
+        "baseUnitProfit": "ISK 660,000",
+        "baseExpectedProfit": "ISK 1,980,000",
+        "baseProfitMargin": 65.53710028236111,
+        "adjustedTotalMaterialCost": "ISK 1,007,000",
+        "adjustedUnitProductionPrice": "ISK 1,007,000",
+        "adjustedUnitProfit": "ISK 660,000",
+        "adjustedExpectedProfit": "ISK 1,665,000",
+        "adjustedExpectedProfitRaw": 1664951.9031168902,
+        "adjustedProfitMargin": 65.53710028236111,
+        "productSellVolume": 1055,
+        "productNumOrders": 44
+      }
+    },
+    {
+      "blueprintTypeID": 34273,
+      "blueprintName": "Polarized Small Focused Pulse Laser Blueprint",
+      "produces": {
+        "productTypeID": 34272,
+        "productName": "Polarized Small Focused Pulse Laser",
+        "productFivePercent": "2908445.629",
+        "productQuantity": 1,
+        "productParentGroupId": 558,
+        "productParentGroupName": "Pulse Lasers",
+        "productMarketGroupID": 570,
+        "productMarketGroupName": "Small"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 51835.8542745,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 51835.8542745,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 51835.8542745
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11689,
+          "materialName": "Laser Focusing Crystals",
+          "materialPrice": 41278.6382562,
+          "baseMaterialQuantity": 4,
+          "baseMaterialRunCost": 165114.5530248,
+          "adjustedMaterialQuantity": 4,
+          "adjustedMaterialRunCost": 165114.5530248,
+          "totalMaterialQuantity": 4,
+          "totalRunCost": 165114.5530248
+        },
+        {
+          "materialTypeID": 3041,
+          "materialName": "Small Focused Pulse Laser II",
+          "materialPrice": 999766.423358,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 999766.423358,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 999766.423358,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 999766.423358
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 87995.5768882,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 87995.5768882,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 87995.5768882
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Small Focused Pulse Laser",
+        "unitPrice": "ISK 2,908,000",
+        "expectedRevenue": 2908445.629,
+        "adjustedRevenue": 2725213.5543730003,
+        "baseTotalMaterialCost": "ISK 1,305,000",
+        "baseUnitProductionPrice": "ISK 1,305,000",
+        "baseUnitProfit": "ISK 1,603,000",
+        "baseExpectedProfit": "ISK 1,603,000",
+        "baseProfitMargin": 122.84200564049115,
+        "adjustedTotalMaterialCost": "ISK 1,305,000",
+        "adjustedUnitProductionPrice": "ISK 1,305,000",
+        "adjustedUnitProfit": "ISK 1,603,000",
+        "adjustedExpectedProfit": "ISK 1,420,000",
+        "adjustedExpectedProfitRaw": 1420053.1468275003,
+        "adjustedProfitMargin": 122.84200564049115,
+        "productSellVolume": 469,
+        "productNumOrders": 43
+      }
+    },
+    {
+      "blueprintTypeID": 34273,
+      "blueprintName": "Polarized Small Focused Pulse Laser Blueprint",
+      "produces": {
+        "productTypeID": 34272,
+        "productName": "Polarized Small Focused Pulse Laser",
+        "productFivePercent": "2908445.629",
+        "productQuantity": 1,
+        "productParentGroupId": 558,
+        "productParentGroupName": "Pulse Lasers",
+        "productMarketGroupID": 570,
+        "productMarketGroupName": "Small"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 51835.8542745,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 51835.8542745,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 51835.8542745
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11689,
+          "materialName": "Laser Focusing Crystals",
+          "materialPrice": 41278.6382562,
+          "baseMaterialQuantity": 4,
+          "baseMaterialRunCost": 165114.5530248,
+          "adjustedMaterialQuantity": 4,
+          "adjustedMaterialRunCost": 165114.5530248,
+          "totalMaterialQuantity": 4,
+          "totalRunCost": 165114.5530248
+        },
+        {
+          "materialTypeID": 3041,
+          "materialName": "Small Focused Pulse Laser II",
+          "materialPrice": 999766.423358,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 999766.423358,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 999766.423358,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 999766.423358
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 87995.5768882,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 87995.5768882,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 87995.5768882
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Small Focused Pulse Laser",
+        "unitPrice": "ISK 2,908,000",
+        "expectedRevenue": 2908445.629,
+        "adjustedRevenue": 2725213.5543730003,
+        "baseTotalMaterialCost": "ISK 1,305,000",
+        "baseUnitProductionPrice": "ISK 1,305,000",
+        "baseUnitProfit": "ISK 1,603,000",
+        "baseExpectedProfit": "ISK 1,603,000",
+        "baseProfitMargin": 122.84200564049115,
+        "adjustedTotalMaterialCost": "ISK 1,305,000",
+        "adjustedUnitProductionPrice": "ISK 1,305,000",
+        "adjustedUnitProfit": "ISK 1,603,000",
+        "adjustedExpectedProfit": "ISK 1,420,000",
+        "adjustedExpectedProfitRaw": 1420053.1468275003,
+        "adjustedProfitMargin": 122.84200564049115,
+        "productSellVolume": 469,
+        "productNumOrders": 43
+      }
+    },
+    {
+      "blueprintTypeID": 34287,
+      "blueprintName": "Polarized 425mm AutoCannon Blueprint",
+      "produces": {
+        "productTypeID": 34286,
+        "productName": "Polarized 425mm AutoCannon",
+        "productFivePercent": "3316931.50685",
+        "productQuantity": 1,
+        "productParentGroupId": 559,
+        "productParentGroupName": "Autocannons",
+        "productMarketGroupID": 575,
+        "productMarketGroupName": "Medium"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 8,
+          "baseMaterialRunCost": 138228.944732,
+          "adjustedMaterialQuantity": 8,
+          "adjustedMaterialRunCost": 138228.944732,
+          "totalMaterialQuantity": 23,
+          "totalRunCost": 414686.834196
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 1344
+        },
+        {
+          "materialTypeID": 11691,
+          "materialName": "Thermonuclear Trigger Unit",
+          "materialPrice": 41737.3962789,
+          "baseMaterialQuantity": 8,
+          "baseMaterialRunCost": 333899.1702312,
+          "adjustedMaterialQuantity": 8,
+          "adjustedMaterialRunCost": 333899.1702312,
+          "totalMaterialQuantity": 23,
+          "totalRunCost": 1001697.5106935999
+        },
+        {
+          "materialTypeID": 2913,
+          "materialName": "425mm AutoCannon II",
+          "materialPrice": 2065000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 2065000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 2065000,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 6195000
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 175991.1537764,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 175991.1537764,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 527973.4613292
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized 425mm AutoCannon",
+        "unitPrice": "ISK 3,317,000",
+        "expectedRevenue": 9950794.52055,
+        "adjustedRevenue": 9323894.465755349,
+        "baseTotalMaterialCost": "ISK 2,714,000",
+        "baseUnitProductionPrice": "ISK 2,714,000",
+        "baseUnitProfit": "ISK 603,400",
+        "baseExpectedProfit": "ISK 1,810,000",
+        "baseProfitMargin": 22.235094189894596,
+        "adjustedTotalMaterialCost": "ISK 2,714,000",
+        "adjustedUnitProductionPrice": "ISK 2,714,000",
+        "adjustedUnitProfit": "ISK 603,400",
+        "adjustedExpectedProfit": "ISK 1,183,000",
+        "adjustedExpectedProfitRaw": 1183192.6595365498,
+        "adjustedProfitMargin": 22.235094189894596,
+        "productSellVolume": 584,
+        "productNumOrders": 39
+      }
+    },
+    {
+      "blueprintTypeID": 34285,
+      "blueprintName": "Polarized 200mm AutoCannon Blueprint",
+      "produces": {
+        "productTypeID": 34284,
+        "productName": "Polarized 200mm AutoCannon",
+        "productFivePercent": "1667090.04739",
+        "productQuantity": 1,
+        "productParentGroupId": 559,
+        "productParentGroupName": "Autocannons",
+        "productMarketGroupID": 574,
+        "productMarketGroupName": "Small"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 34557.236183,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 34557.236183,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 34557.236183
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11691,
+          "materialName": "Thermonuclear Trigger Unit",
+          "materialPrice": 41737.3962789,
+          "baseMaterialQuantity": 4,
+          "baseMaterialRunCost": 166949.5851156,
+          "adjustedMaterialQuantity": 4,
+          "adjustedMaterialRunCost": 166949.5851156,
+          "totalMaterialQuantity": 4,
+          "totalRunCost": 166949.5851156
+        },
+        {
+          "materialTypeID": 2889,
+          "materialName": "200mm AutoCannon II",
+          "materialPrice": 717129.008512,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 717129.008512,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 717129.008512,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 717129.008512
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 87995.5768882,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 87995.5768882,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 87995.5768882
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized 200mm AutoCannon",
+        "unitPrice": "ISK 1,667,000",
+        "expectedRevenue": 1667090.04739,
+        "adjustedRevenue": 1562063.37440443,
+        "baseTotalMaterialCost": "ISK 1,007,000",
+        "baseUnitProductionPrice": "ISK 1,007,000",
+        "baseUnitProfit": "ISK 660,000",
+        "baseExpectedProfit": "ISK 660,000",
+        "baseProfitMargin": 65.53710028236111,
+        "adjustedTotalMaterialCost": "ISK 1,007,000",
+        "adjustedUnitProductionPrice": "ISK 1,007,000",
+        "adjustedUnitProfit": "ISK 660,000",
+        "adjustedExpectedProfit": "ISK 555,000",
+        "adjustedExpectedProfitRaw": 554983.9677056299,
+        "adjustedProfitMargin": 65.53710028236111,
+        "productSellVolume": 1055,
+        "productNumOrders": 44
+      }
+    },
+    {
+      "blueprintTypeID": 34275,
+      "blueprintName": "Polarized Heavy Pulse Laser Blueprint",
+      "produces": {
+        "productTypeID": 34274,
+        "productName": "Polarized Heavy Pulse Laser",
+        "productFivePercent": "4202029.33985",
+        "productQuantity": 1,
+        "productParentGroupId": 558,
+        "productParentGroupName": "Pulse Lasers",
+        "productMarketGroupID": 572,
+        "productMarketGroupName": "Medium"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 8,
+          "baseMaterialRunCost": 138228.944732,
+          "adjustedMaterialQuantity": 8,
+          "adjustedMaterialRunCost": 138228.944732,
+          "totalMaterialQuantity": 8,
+          "totalRunCost": 138228.944732
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11689,
+          "materialName": "Laser Focusing Crystals",
+          "materialPrice": 41278.6382562,
+          "baseMaterialQuantity": 9,
+          "baseMaterialRunCost": 371507.7443058,
+          "adjustedMaterialQuantity": 9,
+          "adjustedMaterialRunCost": 371507.7443058,
+          "totalMaterialQuantity": 9,
+          "totalRunCost": 371507.7443058
+        },
+        {
+          "materialTypeID": 3520,
+          "materialName": "Heavy Pulse Laser II",
+          "materialPrice": 2709988.74296,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 2709988.74296,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 2709988.74296,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 2709988.74296
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 175991.1537764,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 175991.1537764,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 175991.1537764
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized Heavy Pulse Laser",
+        "unitPrice": "ISK 4,202,000",
+        "expectedRevenue": 4202029.33985,
+        "adjustedRevenue": 3937301.49143945,
+        "baseTotalMaterialCost": "ISK 3,396,000",
+        "baseUnitProductionPrice": "ISK 3,396,000",
+        "baseUnitProfit": "ISK 805,900",
+        "baseExpectedProfit": "ISK 805,900",
+        "baseProfitMargin": 23.72867196870829,
+        "adjustedTotalMaterialCost": "ISK 3,396,000",
+        "adjustedUnitProductionPrice": "ISK 3,396,000",
+        "adjustedUnitProfit": "ISK 805,900",
+        "adjustedExpectedProfit": "ISK 541,100",
+        "adjustedExpectedProfitRaw": 541136.9056652505,
+        "adjustedProfitMargin": 23.72867196870829,
+        "productSellVolume": 409,
+        "productNumOrders": 19
+      }
+    },
+    {
+      "blueprintTypeID": 34287,
+      "blueprintName": "Polarized 425mm AutoCannon Blueprint",
+      "produces": {
+        "productTypeID": 34286,
+        "productName": "Polarized 425mm AutoCannon",
+        "productFivePercent": "3316931.50685",
+        "productQuantity": 1,
+        "productParentGroupId": 559,
+        "productParentGroupName": "Autocannons",
+        "productMarketGroupID": 575,
+        "productMarketGroupName": "Medium"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 8,
+          "baseMaterialRunCost": 138228.944732,
+          "adjustedMaterialQuantity": 8,
+          "adjustedMaterialRunCost": 138228.944732,
+          "totalMaterialQuantity": 8,
+          "totalRunCost": 138228.944732
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11691,
+          "materialName": "Thermonuclear Trigger Unit",
+          "materialPrice": 41737.3962789,
+          "baseMaterialQuantity": 8,
+          "baseMaterialRunCost": 333899.1702312,
+          "adjustedMaterialQuantity": 8,
+          "adjustedMaterialRunCost": 333899.1702312,
+          "totalMaterialQuantity": 8,
+          "totalRunCost": 333899.1702312
+        },
+        {
+          "materialTypeID": 2913,
+          "materialName": "425mm AutoCannon II",
+          "materialPrice": 2065000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 2065000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 2065000,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 2065000
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 175991.1537764,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 175991.1537764,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 175991.1537764
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized 425mm AutoCannon",
+        "unitPrice": "ISK 3,317,000",
+        "expectedRevenue": 3316931.50685,
+        "adjustedRevenue": 3107964.82191845,
+        "baseTotalMaterialCost": "ISK 2,714,000",
+        "baseUnitProductionPrice": "ISK 2,714,000",
+        "baseUnitProfit": "ISK 603,400",
+        "baseExpectedProfit": "ISK 603,400",
+        "baseProfitMargin": 22.235094189894596,
+        "adjustedTotalMaterialCost": "ISK 2,714,000",
+        "adjustedUnitProductionPrice": "ISK 2,714,000",
+        "adjustedUnitProfit": "ISK 603,400",
+        "adjustedExpectedProfit": "ISK 394,400",
+        "adjustedExpectedProfitRaw": 394397.5531788501,
+        "adjustedProfitMargin": 22.235094189894596,
+        "productSellVolume": 584,
+        "productNumOrders": 39
+      }
+    },
+    {
+      "blueprintTypeID": 33517,
+      "blueprintName": "Mobile Depot Blueprint",
+      "produces": {
+        "productTypeID": 33474,
+        "productName": "Mobile Depot",
+        "productFivePercent": "1488479.46726",
+        "productQuantity": 1,
+        "productParentGroupId": 404,
+        "productParentGroupName": "Deployable Structures",
+        "productMarketGroupID": 1831,
+        "productMarketGroupName": "Mobile Depots"
+      },
+      "materials": [
+        {
+          "materialTypeID": 17898,
+          "materialName": "High-Tech Transmitters",
+          "materialPrice": 89832.3563333,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 89832.3563333,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 89832.3563333,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 89832.3563333
+        },
+        {
+          "materialTypeID": 2351,
+          "materialName": "Smartfab Units",
+          "materialPrice": 79966.0586895,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 239898.1760685,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 239898.1760685,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 239898.1760685
+        },
+        {
+          "materialTypeID": 2352,
+          "materialName": "Nuclear Reactors",
+          "materialPrice": 89442.1591633,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 89442.1591633,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 89442.1591633,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 89442.1591633
+        },
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 8.13205985216,
+          "baseMaterialQuantity": 5556,
+          "baseMaterialRunCost": 45181.72453860096,
+          "adjustedMaterialQuantity": 5217,
+          "adjustedMaterialRunCost": 42424.956248718714,
+          "totalMaterialQuantity": 5217,
+          "totalRunCost": 42424.956248718714
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.8020084481,
+          "baseMaterialQuantity": 222,
+          "baseMaterialRunCost": 1732.0458754781998,
+          "adjustedMaterialQuantity": 209,
+          "adjustedMaterialRunCost": 1630.6197656529,
+          "totalMaterialQuantity": 209,
+          "totalRunCost": 1630.6197656529
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 1038.63930373,
+          "baseMaterialQuantity": 444,
+          "baseMaterialRunCost": 461155.85085612,
+          "adjustedMaterialQuantity": 417,
+          "adjustedMaterialRunCost": 433112.58965541,
+          "totalMaterialQuantity": 417,
+          "totalRunCost": 433112.58965541
+        },
+        {
+          "materialTypeID": 9834,
+          "materialName": "Guidance Systems",
+          "materialPrice": 106702.92203,
+          "baseMaterialQuantity": 3,
+          "baseMaterialRunCost": 320108.76609,
+          "adjustedMaterialQuantity": 3,
+          "adjustedMaterialRunCost": 320108.76609,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 320108.76609
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Mobile Depot",
+        "unitPrice": "ISK 1,488,000",
+        "expectedRevenue": 1488479.46726,
+        "adjustedRevenue": 1394705.26082262,
+        "baseTotalMaterialCost": "ISK 1,247,000",
+        "baseUnitProductionPrice": "ISK 1,247,000",
+        "baseUnitProfit": "ISK 241,100",
+        "baseExpectedProfit": "ISK 241,100",
+        "baseProfitMargin": 19.331236602805827,
+        "adjustedTotalMaterialCost": "ISK 1,216,000",
+        "adjustedUnitProductionPrice": "ISK 1,216,000",
+        "adjustedUnitProfit": "ISK 272,000",
+        "adjustedExpectedProfit": "ISK 178,300",
+        "adjustedExpectedProfitRaw": 178255.63749773824,
+        "adjustedProfitMargin": 22.36260661510898,
+        "productSellVolume": 1802,
+        "productNumOrders": 38
+      }
+    },
+    {
+      "blueprintTypeID": 33519,
+      "blueprintName": "Mobile Tractor Unit Blueprint",
+      "produces": {
+        "productTypeID": 33475,
+        "productName": "Mobile Tractor Unit",
+        "productFivePercent": "6885325.99292",
+        "productQuantity": 1,
+        "productParentGroupId": 404,
+        "productParentGroupName": "Deployable Structures",
+        "productMarketGroupID": 1833,
+        "productMarketGroupName": "Mobile Tractor Units"
+      },
+      "materials": [
+        {
+          "materialTypeID": 17136,
+          "materialName": "Ukomi Superconductors",
+          "materialPrice": 88142.8266936,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 176285.6533872,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 176285.6533872,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 176285.6533872
+        },
+        {
+          "materialTypeID": 24348,
+          "materialName": "Small Tractor Beam I",
+          "materialPrice": 1399509.20245,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 1399509.20245,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 1399509.20245,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 1399509.20245
+        },
+        {
+          "materialTypeID": 2870,
+          "materialName": "Organic Mortar Applicators",
+          "materialPrice": 979513.85263,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 1959027.70526,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 1959027.70526,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 1959027.70526
+        },
+        {
+          "materialTypeID": 2876,
+          "materialName": "Wetware Mainframe",
+          "materialPrice": 1992731.73213,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 1992731.73213,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 1992731.73213,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 1992731.73213
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 1038.63930373,
+          "baseMaterialQuantity": 948,
+          "baseMaterialRunCost": 984630.05993604,
+          "adjustedMaterialQuantity": 891,
+          "adjustedMaterialRunCost": 925427.61962343,
+          "totalMaterialQuantity": 891,
+          "totalRunCost": 925427.61962343
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Mobile Tractor Unit",
+        "unitPrice": "ISK 6,885,000",
+        "expectedRevenue": 6885325.99292,
+        "adjustedRevenue": 6451550.45536604,
+        "baseTotalMaterialCost": "ISK 6,512,000",
+        "baseUnitProductionPrice": "ISK 6,512,000",
+        "baseUnitProfit": "ISK 373,100",
+        "baseExpectedProfit": "ISK 373,100",
+        "baseProfitMargin": 5.729899823482579,
+        "adjustedTotalMaterialCost": "ISK 6,453,000",
+        "adjustedUnitProductionPrice": "ISK 6,453,000",
+        "adjustedUnitProfit": "ISK 432,300",
+        "adjustedExpectedProfit": "-ISK 1,431",
+        "adjustedExpectedProfitRaw": -1431.4574845898896,
+        "adjustedProfitMargin": 6.699911543350055,
+        "productSellVolume": 5086,
+        "productNumOrders": 68
+      }
+    },
+    {
+      "blueprintTypeID": 34289,
+      "blueprintName": "Polarized 800mm Repeating Cannon Blueprint",
+      "produces": {
+        "productTypeID": 34288,
+        "productName": "Polarized 800mm Repeating Cannon",
+        "productFivePercent": "4011306.2645",
+        "productQuantity": 1,
+        "productParentGroupId": 559,
+        "productParentGroupName": "Autocannons",
+        "productMarketGroupID": 576,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 17,
+          "baseMaterialRunCost": 293736.5075555,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 276457.889464,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 276457.889464
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11691,
+          "materialName": "Thermonuclear Trigger Unit",
+          "materialPrice": 41737.3962789,
+          "baseMaterialQuantity": 16,
+          "baseMaterialRunCost": 667798.3404624,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 667798.3404624,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 667798.3404624
+        },
+        {
+          "materialTypeID": 2929,
+          "materialName": "800mm Repeating Cannon II",
+          "materialPrice": 4874000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 4874000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 4874000,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 4874000
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 175991.1537764,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 175991.1537764,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 175991.1537764
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized 800mm Repeating Cannon",
+        "unitPrice": "ISK 4,011,000",
+        "expectedRevenue": 4011306.2645,
+        "adjustedRevenue": 3758593.9698365,
+        "baseTotalMaterialCost": "ISK 6,012,000",
+        "baseUnitProductionPrice": "ISK 6,012,000",
+        "baseUnitProfit": "-ISK 2,001,000",
+        "baseExpectedProfit": "-ISK 2,001,000",
+        "baseProfitMargin": -33.27805038240671,
+        "adjustedTotalMaterialCost": "ISK 5,995,000",
+        "adjustedUnitProductionPrice": "ISK 5,995,000",
+        "adjustedUnitProfit": "-ISK 1,983,000",
+        "adjustedExpectedProfit": "-ISK 2,236,000",
+        "adjustedExpectedProfitRaw": -2236101.4138662997,
+        "adjustedProfitMargin": -33.08573650956224,
+        "productSellVolume": 431,
+        "productNumOrders": 47
+      }
+    },
+    {
+      "blueprintTypeID": 34289,
+      "blueprintName": "Polarized 800mm Repeating Cannon Blueprint",
+      "produces": {
+        "productTypeID": 34288,
+        "productName": "Polarized 800mm Repeating Cannon",
+        "productFivePercent": "4011306.2645",
+        "productQuantity": 1,
+        "productParentGroupId": 559,
+        "productParentGroupName": "Autocannons",
+        "productMarketGroupID": 576,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 17,
+          "baseMaterialRunCost": 293736.5075555,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 276457.889464,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 276457.889464
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 448
+        },
+        {
+          "materialTypeID": 11691,
+          "materialName": "Thermonuclear Trigger Unit",
+          "materialPrice": 41737.3962789,
+          "baseMaterialQuantity": 16,
+          "baseMaterialRunCost": 667798.3404624,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 667798.3404624,
+          "totalMaterialQuantity": 16,
+          "totalRunCost": 667798.3404624
+        },
+        {
+          "materialTypeID": 2929,
+          "materialName": "800mm Repeating Cannon II",
+          "materialPrice": 4874000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 4874000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 4874000,
+          "totalMaterialQuantity": 1,
+          "totalRunCost": 4874000
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 175991.1537764,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 175991.1537764,
+          "totalMaterialQuantity": 2,
+          "totalRunCost": 175991.1537764
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized 800mm Repeating Cannon",
+        "unitPrice": "ISK 4,011,000",
+        "expectedRevenue": 4011306.2645,
+        "adjustedRevenue": 3758593.9698365,
+        "baseTotalMaterialCost": "ISK 6,012,000",
+        "baseUnitProductionPrice": "ISK 6,012,000",
+        "baseUnitProfit": "-ISK 2,001,000",
+        "baseExpectedProfit": "-ISK 2,001,000",
+        "baseProfitMargin": -33.27805038240671,
+        "adjustedTotalMaterialCost": "ISK 5,995,000",
+        "adjustedUnitProductionPrice": "ISK 5,995,000",
+        "adjustedUnitProfit": "-ISK 1,983,000",
+        "adjustedExpectedProfit": "-ISK 2,236,000",
+        "adjustedExpectedProfitRaw": -2236101.4138662997,
+        "adjustedProfitMargin": -33.08573650956224,
+        "productSellVolume": 431,
+        "productNumOrders": 47
+      }
+    },
+    {
+      "blueprintTypeID": 22878,
+      "blueprintName": "'Natura' Warp Core Stabilizer I Blueprint",
+      "produces": {
+        "productTypeID": 22877,
+        "productName": "'Natura' Warp Core Stabilizer I",
+        "productFivePercent": "180000000",
+        "productQuantity": 1,
+        "productParentGroupId": 132,
+        "productParentGroupName": "Propulsion Upgrades",
+        "productMarketGroupID": 1088,
+        "productMarketGroupName": "Warp Core Stabilizers"
+      },
+      "materials": [
+        {
+          "materialTypeID": 23128,
+          "materialName": "Yan Jung Crystal Cylinder",
+          "materialPrice": 6619405.94059,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 6619405.94059,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 6619405.94059,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 19858217.821769997
+        },
+        {
+          "materialTypeID": 23129,
+          "materialName": "Yan Jung Paradox Box",
+          "materialPrice": 380576.446837,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 380576.446837,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 380576.446837,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 1141729.340511
+        },
+        {
+          "materialTypeID": 23130,
+          "materialName": "Yan Jung Thunder Kite",
+          "materialPrice": 3554146.34146,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 3554146.34146,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 3554146.34146,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 10662439.024379998
+        },
+        {
+          "materialTypeID": 23131,
+          "materialName": "Yan Jung Void Machine",
+          "materialPrice": 138573.457895,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 138573.457895,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 138573.457895,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 415720.373685
+        },
+        {
+          "materialTypeID": 23132,
+          "materialName": "Yan Jung Tachyon Stetoscope",
+          "materialPrice": 87791666.6667,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 87791666.6667,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 87791666.6667,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 263375000.00010002
+        },
+        {
+          "materialTypeID": 23138,
+          "materialName": "Yan Jung Null Shell",
+          "materialPrice": 850500,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 850500,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 850500,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 2551500
+        },
+        {
+          "materialTypeID": 23139,
+          "materialName": "Yan Jung Glass Scale",
+          "materialPrice": 998034.042553,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 998034.042553,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 998034.042553,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 2994102.127659
+        },
+        {
+          "materialTypeID": 23140,
+          "materialName": "Yan Jung Plenary Wire",
+          "materialPrice": 218940.89477,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 218940.89477,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 218940.89477,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 656822.68431
+        },
+        {
+          "materialTypeID": 23141,
+          "materialName": "Yan Jung Silk Armor",
+          "materialPrice": 82407.0175439,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 82407.0175439,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 82407.0175439,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 247221.0526317
+        },
+        {
+          "materialTypeID": 23142,
+          "materialName": "Yan Jung Nano Fabric",
+          "materialPrice": 66069.1011236,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 66069.1011236,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 66069.1011236,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 198207.30337080001
+        },
+        {
+          "materialTypeID": 23168,
+          "materialName": "Yan Jung Info Matrix",
+          "materialPrice": 445800,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 445800,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 445800,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 1337400
+        },
+        {
+          "materialTypeID": 23169,
+          "materialName": "Yan Jung Vellum Etch",
+          "materialPrice": 140521.924482,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 140521.924482,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 140521.924482,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 421565.773446
+        },
+        {
+          "materialTypeID": 23170,
+          "materialName": "Yan Jung Trigonometric Laws",
+          "materialPrice": 119361.759082,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 119361.759082,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 119361.759082,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 358085.277246
+        },
+        {
+          "materialTypeID": 23171,
+          "materialName": "Yan Jung Semiotic Theory",
+          "materialPrice": 51555.7120501,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 51555.7120501,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 51555.7120501,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 154667.1361503
+        },
+        {
+          "materialTypeID": 23172,
+          "materialName": "Yan Jung Singularity Fact Sheet",
+          "materialPrice": 68918571.4286,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 68918571.4286,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 68918571.4286,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 206755714.28579998
+        },
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 8.13205985216,
+          "baseMaterialQuantity": 566,
+          "baseMaterialRunCost": 4602.7458763225595,
+          "adjustedMaterialQuantity": 532,
+          "adjustedMaterialRunCost": 4326.25584134912,
+          "totalMaterialQuantity": 1595,
+          "totalRunCost": 12978.767524047358
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.8020084481,
+          "baseMaterialQuantity": 504,
+          "baseMaterialRunCost": 3932.2122578423996,
+          "adjustedMaterialQuantity": 474,
+          "adjustedMaterialRunCost": 3698.1520043993996,
+          "totalMaterialQuantity": 1420,
+          "totalRunCost": 11094.4560131982
+        },
+        {
+          "materialTypeID": 36,
+          "materialName": "Mexallon",
+          "materialPrice": 89.7615082178,
+          "baseMaterialQuantity": 186,
+          "baseMaterialRunCost": 16695.6405285108,
+          "adjustedMaterialQuantity": 175,
+          "adjustedMaterialRunCost": 15708.263938115,
+          "totalMaterialQuantity": 524,
+          "totalRunCost": 47124.791814345
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "'Natura' Warp Core Stabilizer I",
+        "unitPrice": "ISK 180,000,000",
+        "expectedRevenue": 540000000,
+        "adjustedRevenue": 505980000,
+        "baseTotalMaterialCost": "ISK 170,400,000",
+        "baseUnitProductionPrice": "ISK 170,400,000",
+        "baseUnitProfit": "ISK 9,599,000",
+        "baseExpectedProfit": "ISK 28,800,000",
+        "baseProfitMargin": 5.632958911008735,
+        "adjustedTotalMaterialCost": "ISK 170,400,000",
+        "adjustedUnitProductionPrice": "ISK 170,400,000",
+        "adjustedUnitProfit": "ISK 9,600,000",
+        "adjustedExpectedProfit": "-ISK 5,220,000",
+        "adjustedExpectedProfitRaw": -5219590.216411352,
+        "adjustedProfitMargin": 5.633887494196982,
+        "productSellVolume": 7,
+        "productNumOrders": 5
+      }
+    },
+    {
+      "blueprintTypeID": 41655,
+      "blueprintName": "Large Ancillary Remote Armor Repairer Blueprint",
+      "produces": {
+        "productTypeID": 41478,
+        "productName": "Large Ancillary Remote Armor Repairer",
+        "productFivePercent": "678831.491713",
+        "productQuantity": 1,
+        "productParentGroupId": 537,
+        "productParentGroupName": "Remote Armor Repairers",
+        "productMarketGroupID": 1057,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 8.13205985216,
+          "baseMaterialQuantity": 21568,
+          "baseMaterialRunCost": 175392.26689138685,
+          "adjustedMaterialQuantity": 20249,
+          "adjustedMaterialRunCost": 164666.07994638782,
+          "totalMaterialQuantity": 404979,
+          "totalRunCost": 3293321.5989277563
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.8020084481,
+          "baseMaterialQuantity": 17788,
+          "baseMaterialRunCost": 138782.12627480278,
+          "adjustedMaterialQuantity": 16701,
+          "adjustedMaterialRunCost": 130301.3430917181,
+          "totalMaterialQuantity": 334002,
+          "totalRunCost": 2606026.861834362
+        },
+        {
+          "materialTypeID": 36,
+          "materialName": "Mexallon",
+          "materialPrice": 89.7615082178,
+          "baseMaterialQuantity": 2502,
+          "baseMaterialRunCost": 224583.2935609356,
+          "adjustedMaterialQuantity": 2349,
+          "adjustedMaterialRunCost": 210849.7828036122,
+          "totalMaterialQuantity": 46980,
+          "totalRunCost": 4216995.656072244
+        },
+        {
+          "materialTypeID": 37,
+          "materialName": "Isogen",
+          "materialPrice": 21.2516307599,
+          "baseMaterialQuantity": 1665,
+          "baseMaterialRunCost": 35383.9652152335,
+          "adjustedMaterialQuantity": 1564,
+          "adjustedMaterialRunCost": 33237.5505084836,
+          "totalMaterialQuantity": 31264,
+          "totalRunCost": 664751.010169672
+        },
+        {
+          "materialTypeID": 38,
+          "materialName": "Nocxium",
+          "materialPrice": 334.251298243,
+          "baseMaterialQuantity": 344,
+          "baseMaterialRunCost": 114982.446595592,
+          "adjustedMaterialQuantity": 323,
+          "adjustedMaterialRunCost": 107963.16933248901,
+          "totalMaterialQuantity": 6460,
+          "totalRunCost": 2159263.38664978
+        },
+        {
+          "materialTypeID": 39,
+          "materialName": "Zydrine",
+          "materialPrice": 1038.63930373,
+          "baseMaterialQuantity": 174,
+          "baseMaterialRunCost": 180723.23884901998,
+          "adjustedMaterialQuantity": 164,
+          "adjustedMaterialRunCost": 170336.84581171998,
+          "totalMaterialQuantity": 3268,
+          "totalRunCost": 3406736.9162343997
+        },
+        {
+          "materialTypeID": 40,
+          "materialName": "Megacyte",
+          "materialPrice": 591.484249535,
+          "baseMaterialQuantity": 186,
+          "baseMaterialRunCost": 110016.07041351,
+          "adjustedMaterialQuantity": 175,
+          "adjustedMaterialRunCost": 103509.743668625,
+          "totalMaterialQuantity": 3493,
+          "totalRunCost": 2070194.8733725
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Large Ancillary Remote Armor Repairer",
+        "unitPrice": "ISK 678,800",
+        "expectedRevenue": 13576629.83426,
+        "adjustedRevenue": 12721302.15470162,
+        "baseTotalMaterialCost": "ISK 979,900",
+        "baseUnitProductionPrice": "ISK 979,900",
+        "baseUnitProfit": "-ISK 301,000",
+        "baseExpectedProfit": "-ISK 6,021,000",
+        "baseProfitMargin": -30.721824459514522,
+        "adjustedTotalMaterialCost": "ISK 920,900",
+        "adjustedUnitProductionPrice": "ISK 920,900",
+        "adjustedUnitProfit": "-ISK 242,000",
+        "adjustedExpectedProfit": "-ISK 5,696,000",
+        "adjustedExpectedProfitRaw": -5695988.1485590935,
+        "adjustedProfitMargin": -26.28323922408767,
+        "productSellVolume": 181,
+        "productNumOrders": 22
+      }
+    },
+    {
+      "blueprintTypeID": 34289,
+      "blueprintName": "Polarized 800mm Repeating Cannon Blueprint",
+      "produces": {
+        "productTypeID": 34288,
+        "productName": "Polarized 800mm Repeating Cannon",
+        "productFivePercent": "4011306.2645",
+        "productQuantity": 1,
+        "productParentGroupId": 559,
+        "productParentGroupName": "Autocannons",
+        "productMarketGroupID": 576,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 11399,
+          "materialName": "Morphite",
+          "materialPrice": 17278.6180915,
+          "baseMaterialQuantity": 17,
+          "baseMaterialRunCost": 293736.5075555,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 276457.889464,
+          "totalMaterialQuantity": 48,
+          "totalRunCost": 829373.668392
+        },
+        {
+          "materialTypeID": 11486,
+          "materialName": "R.A.M.- Weapon Tech",
+          "materialPrice": 448,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 448,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 448,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 1344
+        },
+        {
+          "materialTypeID": 11691,
+          "materialName": "Thermonuclear Trigger Unit",
+          "materialPrice": 41737.3962789,
+          "baseMaterialQuantity": 16,
+          "baseMaterialRunCost": 667798.3404624,
+          "adjustedMaterialQuantity": 16,
+          "adjustedMaterialRunCost": 667798.3404624,
+          "totalMaterialQuantity": 46,
+          "totalRunCost": 2003395.0213871999
+        },
+        {
+          "materialTypeID": 2929,
+          "materialName": "800mm Repeating Cannon II",
+          "materialPrice": 4874000,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 4874000,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 4874000,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 14622000
+        },
+        {
+          "materialTypeID": 9848,
+          "materialName": "Robotics",
+          "materialPrice": 87995.5768882,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 175991.1537764,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 175991.1537764,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 527973.4613292
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "Polarized 800mm Repeating Cannon",
+        "unitPrice": "ISK 4,011,000",
+        "expectedRevenue": 12033918.7935,
+        "adjustedRevenue": 11275781.9095095,
+        "baseTotalMaterialCost": "ISK 6,012,000",
+        "baseUnitProductionPrice": "ISK 6,012,000",
+        "baseUnitProfit": "-ISK 2,001,000",
+        "baseExpectedProfit": "-ISK 6,002,000",
+        "baseProfitMargin": -33.27805038240671,
+        "adjustedTotalMaterialCost": "ISK 5,995,000",
+        "adjustedUnitProductionPrice": "ISK 5,995,000",
+        "adjustedUnitProfit": "-ISK 1,983,000",
+        "adjustedExpectedProfit": "-ISK 6,708,000",
+        "adjustedExpectedProfitRaw": -6708304.241598899,
+        "adjustedProfitMargin": -33.08573650956224,
+        "productSellVolume": 431,
+        "productNumOrders": 47
+      }
+    },
+    {
+      "blueprintTypeID": 22892,
+      "blueprintName": "'Protest' Large Armor Repairer I Blueprint",
+      "produces": {
+        "productTypeID": 22891,
+        "productName": "'Protest' Large Armor Repairer I",
+        "productFivePercent": "166233333.333",
+        "productQuantity": 1,
+        "productParentGroupId": 134,
+        "productParentGroupName": "Armor Repairers",
+        "productMarketGroupID": 1051,
+        "productMarketGroupName": "Large"
+      },
+      "materials": [
+        {
+          "materialTypeID": 23132,
+          "materialName": "Yan Jung Tachyon Stetoscope",
+          "materialPrice": 87791666.6667,
+          "baseMaterialQuantity": 2,
+          "baseMaterialRunCost": 175583333.3334,
+          "adjustedMaterialQuantity": 2,
+          "adjustedMaterialRunCost": 175583333.3334,
+          "totalMaterialQuantity": 6,
+          "totalRunCost": 526750000.00020003
+        },
+        {
+          "materialTypeID": 23142,
+          "materialName": "Yan Jung Nano Fabric",
+          "materialPrice": 66069.1011236,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 66069.1011236,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 66069.1011236,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 198207.30337080001
+        },
+        {
+          "materialTypeID": 23171,
+          "materialName": "Yan Jung Semiotic Theory",
+          "materialPrice": 51555.7120501,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 51555.7120501,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 51555.7120501,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 154667.1361503
+        },
+        {
+          "materialTypeID": 23172,
+          "materialName": "Yan Jung Singularity Fact Sheet",
+          "materialPrice": 68918571.4286,
+          "baseMaterialQuantity": 1,
+          "baseMaterialRunCost": 68918571.4286,
+          "adjustedMaterialQuantity": 1,
+          "adjustedMaterialRunCost": 68918571.4286,
+          "totalMaterialQuantity": 3,
+          "totalRunCost": 206755714.28579998
+        },
+        {
+          "materialTypeID": 34,
+          "materialName": "Tritanium",
+          "materialPrice": 8.13205985216,
+          "baseMaterialQuantity": 4662,
+          "baseMaterialRunCost": 37911.663030769916,
+          "adjustedMaterialQuantity": 4377,
+          "adjustedMaterialRunCost": 35594.02597290432,
+          "totalMaterialQuantity": 13131,
+          "totalRunCost": 106782.07791871295
+        },
+        {
+          "materialTypeID": 35,
+          "materialName": "Pyerite",
+          "materialPrice": 7.8020084481,
+          "baseMaterialQuantity": 1857,
+          "baseMaterialRunCost": 14488.3296881217,
+          "adjustedMaterialQuantity": 1744,
+          "adjustedMaterialRunCost": 13606.7027334864,
+          "totalMaterialQuantity": 5231,
+          "totalRunCost": 40820.1082004592
+        },
+        {
+          "materialTypeID": 36,
+          "materialName": "Mexallon",
+          "materialPrice": 89.7615082178,
+          "baseMaterialQuantity": 1027,
+          "baseMaterialRunCost": 92185.0689396806,
+          "adjustedMaterialQuantity": 965,
+          "adjustedMaterialRunCost": 86619.855430177,
+          "totalMaterialQuantity": 2893,
+          "totalRunCost": 259859.56629053102
+        },
+        {
+          "materialTypeID": 37,
+          "materialName": "Isogen",
+          "materialPrice": 21.2516307599,
+          "baseMaterialQuantity": 44,
+          "baseMaterialRunCost": 935.0717534355999,
+          "adjustedMaterialQuantity": 42,
+          "adjustedMaterialRunCost": 892.5684919158,
+          "totalMaterialQuantity": 124,
+          "totalRunCost": 2677.7054757473998
+        },
+        {
+          "materialTypeID": 38,
+          "materialName": "Nocxium",
+          "materialPrice": 334.251298243,
+          "baseMaterialQuantity": 51,
+          "baseMaterialRunCost": 17046.816210393,
+          "adjustedMaterialQuantity": 48,
+          "adjustedMaterialRunCost": 16044.062315664,
+          "totalMaterialQuantity": 144,
+          "totalRunCost": 48132.186946992
+        }
+      ],
+      "priceAnalysis": {
+        "productName": "'Protest' Large Armor Repairer I",
+        "unitPrice": "ISK 166,200,000",
+        "expectedRevenue": 498699999.999,
+        "adjustedRevenue": 467281899.999063,
+        "baseTotalMaterialCost": "ISK 244,800,000",
+        "baseUnitProductionPrice": "ISK 244,800,000",
+        "baseUnitProfit": "-ISK 78,550,000",
+        "baseExpectedProfit": "-ISK 235,600,000",
+        "baseProfitMargin": -32.08925992013442,
+        "adjustedTotalMaterialCost": "ISK 244,800,000",
+        "adjustedUnitProductionPrice": "ISK 244,800,000",
+        "adjustedUnitProfit": "-ISK 78,540,000",
+        "adjustedExpectedProfit": "-ISK 267,000,000",
+        "adjustedExpectedProfitRaw": -267034960.37129068,
+        "adjustedProfitMargin": -32.08653826258599,
+        "productSellVolume": 24,
+        "productNumOrders": 10
+      }
+    }
+  ],
+  "shoppingList": {
+    "Yan Jung Crystal Cylinder": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 19858217.821769997
+    },
+    "Yan Jung Paradox Box": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 1141729.340511
+    },
+    "Yan Jung Thunder Kite": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 10662439.024379998
+    },
+    "Yan Jung Void Machine": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 415720.373685
+    },
+    "Yan Jung Tachyon Stetoscope": {
+      "totalMaterialQuantity": 9,
+      "expectedTotalMaterialCost": 790125000.0003
+    },
+    "Yan Jung Null Shell": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 2551500
+    },
+    "Yan Jung Glass Scale": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 2994102.127659
+    },
+    "Yan Jung Plenary Wire": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 656822.68431
+    },
+    "Yan Jung Silk Armor": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 247221.0526317
+    },
+    "Yan Jung Nano Fabric": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 396414.60674160003
+    },
+    "Yan Jung Info Matrix": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 1337400
+    },
+    "Yan Jung Vellum Etch": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 421565.773446
+    },
+    "Yan Jung Trigonometric Laws": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 358085.277246
+    },
+    "Yan Jung Semiotic Theory": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 309334.2723006
+    },
+    "Yan Jung Singularity Fact Sheet": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 413511428.57159996
+    },
+    "Tritanium": {
+      "totalMaterialQuantity": 586914,
+      "expectedTotalMaterialCost": 4772844.17225019
+    },
+    "Pyerite": {
+      "totalMaterialQuantity": 460769,
+      "expectedTotalMaterialCost": 3595087.4727999987
+    },
+    "Mexallon": {
+      "totalMaterialQuantity": 56031,
+      "expectedTotalMaterialCost": 5029696.3514762055
+    },
+    "Ukomi Superconductors": {
+      "totalMaterialQuantity": 4,
+      "expectedTotalMaterialCost": 352571.3067744
+    },
+    "Small Tractor Beam I": {
+      "totalMaterialQuantity": 2,
+      "expectedTotalMaterialCost": 2799018.4049
+    },
+    "Organic Mortar Applicators": {
+      "totalMaterialQuantity": 4,
+      "expectedTotalMaterialCost": 3918055.41052
+    },
+    "Wetware Mainframe": {
+      "totalMaterialQuantity": 2,
+      "expectedTotalMaterialCost": 3985463.46426
+    },
+    "Zydrine": {
+      "totalMaterialQuantity": 5943,
+      "expectedTotalMaterialCost": 6186135.693015879
+    },
+    "Isogen": {
+      "totalMaterialQuantity": 31981,
+      "expectedTotalMaterialCost": 680052.1843167999
+    },
+    "Nocxium": {
+      "totalMaterialQuantity": 6729,
+      "expectedTotalMaterialCost": 2249511.23717539
+    },
+    "Blood Raider Power Redistributor": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 114979999.9998
+    },
+    "Analog Panel": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 3441
+    },
+    "Megacyte": {
+      "totalMaterialQuantity": 3509,
+      "expectedTotalMaterialCost": 2079658.62136506
+    },
+    "High-Tech Transmitters": {
+      "totalMaterialQuantity": 2,
+      "expectedTotalMaterialCost": 179664.7126666
+    },
+    "Smartfab Units": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 479796.352137
+    },
+    "Nuclear Reactors": {
+      "totalMaterialQuantity": 2,
+      "expectedTotalMaterialCost": 178884.3183266
+    },
+    "Guidance Systems": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 640217.53218
+    },
+    "High-Tech Data Chip": {
+      "totalMaterialQuantity": 423,
+      "expectedTotalMaterialCost": 83907502.884963
+    },
+    "High-Tech Scanner": {
+      "totalMaterialQuantity": 423,
+      "expectedTotalMaterialCost": 206922603.143628
+    },
+    "High-Tech Manufacturing Tools": {
+      "totalMaterialQuantity": 423,
+      "expectedTotalMaterialCost": 572961568.12011
+    },
+    "Data Analyzer I": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 159108.2791395
+    },
+    "Relic Analyzer I": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 155735.5311354
+    },
+    "Sleeper Foundation Block": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 12000000
+    },
+    "Sleeper Split Cables": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 573960.14151
+    },
+    "Sleeper Manuscripts": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 9432808.11807
+    },
+    "Sleeper Data Crystals": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 525000
+    },
+    "Sleeper Heat Nullifying Coil": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 7285860.75948
+    },
+    "Sleeper Nanite Cluster": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 10709568.34533
+    },
+    "Morphite": {
+      "totalMaterialQuantity": 262,
+      "expectedTotalMaterialCost": 4578833.7942475015
+    },
+    "Plasma Thruster": {
+      "totalMaterialQuantity": 57,
+      "expectedTotalMaterialCost": 3125814.5466392
+    },
+    "Gravimetric Sensor Cluster": {
+      "totalMaterialQuantity": 128,
+      "expectedTotalMaterialCost": 4464727.3136128
+    },
+    "Photon Microprocessor": {
+      "totalMaterialQuantity": 310,
+      "expectedTotalMaterialCost": 20373200
+    },
+    "Tungsten Carbide Armor Plate": {
+      "totalMaterialQuantity": 564,
+      "expectedTotalMaterialCost": 8059534.9195968
+    },
+    "Fusion Reactor Unit": {
+      "totalMaterialQuantity": 6,
+      "expectedTotalMaterialCost": 1080000
+    },
+    "Tesseract Capacitor Unit": {
+      "totalMaterialQuantity": 113,
+      "expectedTotalMaterialCost": 8838734.0903262
+    },
+    "Sustained Shield Emitter": {
+      "totalMaterialQuantity": 29,
+      "expectedTotalMaterialCost": 1774194.280686
+    },
+    "Construction Blocks": {
+      "totalMaterialQuantity": 44,
+      "expectedTotalMaterialCost": 393322.98723256
+    },
+    "R.A.M.- Weapon Tech": {
+      "totalMaterialQuantity": 31,
+      "expectedTotalMaterialCost": 13888
+    },
+    "Thermonuclear Trigger Unit": {
+      "totalMaterialQuantity": 125,
+      "expectedTotalMaterialCost": 5342386.723699199
+    },
+    "200mm AutoCannon II": {
+      "totalMaterialQuantity": 4,
+      "expectedTotalMaterialCost": 2868516.034048
+    },
+    "Robotics": {
+      "totalMaterialQuantity": 70,
+      "expectedTotalMaterialCost": 6159690.382173999
+    },
+    "425mm AutoCannon II": {
+      "totalMaterialQuantity": 4,
+      "expectedTotalMaterialCost": 8260000
+    },
+    "800mm Repeating Cannon II": {
+      "totalMaterialQuantity": 5,
+      "expectedTotalMaterialCost": 24370000
+    },
+    "Laser Focusing Crystals": {
+      "totalMaterialQuantity": 71,
+      "expectedTotalMaterialCost": 3013340.5927026
+    },
+    "Heavy Pulse Laser II": {
+      "totalMaterialQuantity": 1,
+      "expectedTotalMaterialCost": 2709988.74296
+    },
+    "Mega Pulse Laser II": {
+      "totalMaterialQuantity": 1,
+      "expectedTotalMaterialCost": 5048618.78453
+    },
+    "Particle Accelerator Unit": {
+      "totalMaterialQuantity": 32,
+      "expectedTotalMaterialCost": 1120000
+    },
+    "Neutron Blaster Cannon II": {
+      "totalMaterialQuantity": 2,
+      "expectedTotalMaterialCost": 11638000
+    },
+    "Rocket Launcher II": {
+      "totalMaterialQuantity": 1,
+      "expectedTotalMaterialCost": 410330.530921
+    },
+    "Small Focused Pulse Laser II": {
+      "totalMaterialQuantity": 12,
+      "expectedTotalMaterialCost": 11997197.080296002
+    },
+    "Quantum Microprocessor": {
+      "totalMaterialQuantity": 12,
+      "expectedTotalMaterialCost": 897826.2620952
+    },
+    "Torpedo Launcher II": {
+      "totalMaterialQuantity": 1,
+      "expectedTotalMaterialCost": 4749132.99045
+    },
+    "Relic Analyzer II": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 3621000
+    },
+    "Data Analyzer II": {
+      "totalMaterialQuantity": 3,
+      "expectedTotalMaterialCost": 3611950.1246999996
+    }
+  },
+  "totalExpectedExpense": "ISK 2,450,000,000",
+  "totalExpectedRevenue": "ISK 2,878,000,000",
+  "totalExpectedProfit": "ISK 427,600,000"
+}

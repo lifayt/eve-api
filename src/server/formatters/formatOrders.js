@@ -7,6 +7,8 @@ module.exports = (blueprints) => {
   let totalExpectedExpense = 0;
   let totalExpectedRevenue = 0;
   blueprints.forEach((blueprint) => {
+    console.log(`Formatting for ${blueprint.typeName}`);
+    console.log(blueprint);
     blueprint.materials.forEach((material) => {
       if (shoppingList[material.materialName]) {
         shoppingList[material.materialName].totalMaterialQuantity +=

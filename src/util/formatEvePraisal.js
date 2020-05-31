@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const main = () => {
   const order = [];
-  const items = json.items;
+  let items = json.items;
   items.forEach((item) => {
     order.push({
       typeName: item.typeName,
@@ -12,6 +12,16 @@ const main = () => {
       stationBonus: 0.98,
       runs: 1
     });
+  });
+
+  order.sort(function (a, b) {
+    if (a.typeName < b.typeName) {
+      return -1;
+    }
+    if (b.typeName > a.typeName) {
+      return 1;
+    }
+    return 0;
   });
 
   const date = new Date().toISOString();

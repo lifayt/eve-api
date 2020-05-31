@@ -1,9 +1,10 @@
 "use strict";
 const mysql = require("mysql");
 const fs = require("fs");
-const retrieveBlueprint = require("../server/database/retrieveBlueprints");
+const retrieveBlueprint = require("../server/database/retrieveBlueprintByBlueprint");
 const formatBlueprint = require("../server/formatters/formatBlueprint");
 const formatOrders = require("../server/formatters/formatOrders");
+const order = require("./order.js");
 require("dotenv").config();
 
 const connection = mysql.createConnection({
@@ -39,128 +40,7 @@ const generateOrders = async (orders) => {
 };
 
 const run = async () => {
-  const orders = await generateOrders([
-    {
-      typeID: "47273",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 10
-    },
-    {
-      typeID: "49710",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 1
-    },
-    {
-      typeID: "47270",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 1
-    },
-    {
-      typeID: "11279",
-      materialEfficiency: 10,
-      stationBonus: 0.98,
-      runs: 50
-    },
-    {
-      typeID: "20138",
-      materialEfficiency: 10,
-      stationBonus: 0.98,
-      runs: 70
-    },
-    {
-      typeID: "501",
-      materialEfficiency: 10,
-      stationBonus: 0.98,
-      runs: 70
-    },
-    {
-      typeID: "499",
-      materialEfficiency: 10,
-      stationBonus: 0.98,
-      runs: 70
-    },
-    {
-      typeID: "1875",
-      materialEfficiency: 10,
-      stationBonus: 0.98,
-      runs: 70
-    },
-    {
-      typeID: "22889",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 3
-    },
-    {
-      typeID: "34272",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 10
-    },
-    {
-      typeID: "21559",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 3
-    },
-    {
-      typeID: "34278",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 3
-    },
-    {
-      typeID: "34288",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 1
-    },
-    {
-      typeID: "34286",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 11
-    },
-    {
-      typeID: "34276",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 10
-    },
-    {
-      typeID: "34294",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 1
-    },
-    {
-      typeID: "4383",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 25
-    },
-    {
-      typeID: "23418",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 3
-    },
-    {
-      typeID: "21491",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 3
-    },
-    {
-      typeID: "12274",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 214
-    }
-  ]);
+  const orders = await generateOrders(order);
 
   orders.blueprints.sort((a, b) => {
     if (
