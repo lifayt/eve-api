@@ -17,6 +17,6 @@ module.exports = (server, options) => {
       runs
     );
 
-    return `${JSON.stringify(formattedBlueprint, null, 2)}`;
+    return formattedBlueprint;
   };
 };

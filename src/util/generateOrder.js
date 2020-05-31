@@ -41,58 +41,100 @@ const generateOrders = async (orders) => {
 const run = async () => {
   const orders = await generateOrders([
     {
-      typeID: "42526",
+      typeID: "47273",
       materialEfficiency: 0,
       stationBonus: 0.98,
-      runs: 50
+      runs: 10
     },
     {
-      typeID: "42528",
+      typeID: "49710",
       materialEfficiency: 0,
       stationBonus: 0.98,
-      runs: 50
+      runs: 1
     },
     {
-      typeID: "42529",
+      typeID: "47270",
       materialEfficiency: 0,
       stationBonus: 0.98,
-      runs: 50
+      runs: 1
     },
     {
-      typeID: "42530",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 50
-    },
-    {
-      typeID: "17670",
+      typeID: "11279",
       materialEfficiency: 10,
       stationBonus: 0.98,
-      runs: 200
+      runs: 50
+    },
+    {
+      typeID: "20138",
+      materialEfficiency: 10,
+      stationBonus: 0.98,
+      runs: 70
+    },
+    {
+      typeID: "501",
+      materialEfficiency: 10,
+      stationBonus: 0.98,
+      runs: 70
+    },
+    {
+      typeID: "499",
+      materialEfficiency: 10,
+      stationBonus: 0.98,
+      runs: 70
+    },
+    {
+      typeID: "1875",
+      materialEfficiency: 10,
+      stationBonus: 0.98,
+      runs: 70
+    },
+    {
+      typeID: "22889",
+      materialEfficiency: 0,
+      stationBonus: 0.98,
+      runs: 3
     },
     {
       typeID: "34272",
       materialEfficiency: 0,
       stationBonus: 0.98,
-      runs: 1
+      runs: 10
     },
     {
-      typeID: "34272",
+      typeID: "21559",
+      materialEfficiency: 0,
+      stationBonus: 0.98,
+      runs: 3
+    },
+    {
+      typeID: "34278",
+      materialEfficiency: 0,
+      stationBonus: 0.98,
+      runs: 3
+    },
+    {
+      typeID: "34288",
       materialEfficiency: 0,
       stationBonus: 0.98,
       runs: 1
     },
     {
-      typeID: "34272",
+      typeID: "34286",
+      materialEfficiency: 0,
+      stationBonus: 0.98,
+      runs: 11
+    },
+    {
+      typeID: "34276",
+      materialEfficiency: 0,
+      stationBonus: 0.98,
+      runs: 10
+    },
+    {
+      typeID: "34294",
       materialEfficiency: 0,
       stationBonus: 0.98,
       runs: 1
-    },
-    {
-      typeID: "41476",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 20
     },
     {
       typeID: "4383",
@@ -101,34 +143,22 @@ const run = async () => {
       runs: 25
     },
     {
-      typeID: "34290",
+      typeID: "23418",
       materialEfficiency: 0,
       stationBonus: 0.98,
-      runs: 10
+      runs: 3
     },
     {
-      typeID: "34292",
+      typeID: "21491",
       materialEfficiency: 0,
       stationBonus: 0.98,
-      runs: 1
-    },
-    {
-      typeID: "34278",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 1
+      runs: 3
     },
     {
       typeID: "12274",
       materialEfficiency: 0,
       stationBonus: 0.98,
-      runs: 400
-    },
-    {
-      typeID: "41480",
-      materialEfficiency: 0,
-      stationBonus: 0.98,
-      runs: 20
+      runs: 214
     }
   ]);
 
